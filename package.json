@@ -4,6 +4,7 @@
     "hardhat": "^2.22.2"
   },
   "dependencies": {
-    "@nomicfoundation/edr-win32-x64-msvc": "^0.3.4"
+    "@nomicfoundation/edr-win32-x64-msvc": "^0.3.4",
+    "@openzeppelin/contracts": "^5.0.2"
   }
 }
