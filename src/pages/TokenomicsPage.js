@@ -14,7 +14,7 @@ const TokenomicsPage = () => {
         <div className="title-section">
           <h1>Tokenomics</h1>
           <p className="text">
-            Hard-coded into the Celtex contract are the following tokenomics, we
+            Hard-coded into the KronCash contract are the following tokenomics, we
             are unable to change them and are fully rug-proof!
           </p>
           <div className="flex">
@@ -35,7 +35,7 @@ const TokenomicsPage = () => {
             </div>
             <div className="description">
               <h3>Supply</h3>
-              <p>100M Celtex Tokens.</p>
+              <p>100M KronCash Tokens.</p>
             </div>
           </div>
           <div className="item">

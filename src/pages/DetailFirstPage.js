@@ -20,7 +20,7 @@ const DetailFirstPage = () => {
         </div>
         <div className="right">
           <div className="title">
-            <h1>Celtex Cloudverse</h1>
+            <h1>KronCash Cloudverse</h1>
             <p className="text">
               Configure your membership pass royalties and collect them on every
               resale - be that on Opensea, LooksRare, or anywhere else. Enforced

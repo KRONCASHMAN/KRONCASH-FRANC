@@ -15,7 +15,7 @@ const ContactPage = () => {
     <div className="container contact-section">
       <div className="sub-section">
         <div className="title">
-          <h2>Contact celtex</h2>
+          <h2>Contact KronCash</h2>
           <span>Contact</span>
         </div>
         <div className="content">
@@ -24,22 +24,22 @@ const ContactPage = () => {
           </p>
         </div>
         <div className="contact-icon">
-          <a href="https://t.me/moonstarchat" target="_blank" rel="noreferrer">
+          <a href="https://t.me/KronCash" target="_blank" rel="noreferrer">
             <div className="item">
               <FontAwesomeIcon style={{ fontSize: "20px" }} icon={faTwitter} />
             </div>
           </a>
-          <a href="https://t.me/moonstarchat" target="_blank" rel="noreferrer">
+          <a href="https://t.me/KronCash" target="_blank" rel="noreferrer">
             <div className="item">
               <FontAwesomeIcon style={{ fontSize: "20px" }} icon={faTelegram} />
             </div>
           </a>
-          <a href="https://t.me/moonstarchat" target="_blank" rel="noreferrer">
+          <a href="https://t.me/KronCash" target="_blank" rel="noreferrer">
             <div className="item">
               <FontAwesomeIcon style={{ fontSize: "20px" }} icon={faDiscord} />
             </div>
           </a>
-          <a href="https://t.me/moonstarchat" target="_blank" rel="noreferrer">
+          <a href="https://t.me/KronCash" target="_blank" rel="noreferrer">
             <div className="item">
               <FontAwesomeIcon
                 style={{ fontSize: "20px" }}

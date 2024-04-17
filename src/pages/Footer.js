@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
           <span className="copyright">
-            <span>©{new Date().getFullYear()}</span> Celtex - All Rights
+            <span>©{new Date().getFullYear()}</span> KronCash - All Rights
             Reserved
           </span>
         </div>

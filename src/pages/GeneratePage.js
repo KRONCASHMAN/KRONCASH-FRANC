@@ -37,7 +37,7 @@ const GeneratePage = () => {
                 decoding="async"
                 src={CloudverseUrl}
               />
-              <p className="product-text">Celtex Cloudverse</p>
+              <p className="product-text">KronCash Cloudverse</p>
             </div>
             <div className="product-item">
               <img
@@ -57,26 +57,26 @@ const GeneratePage = () => {
                 decoding="async"
                 src={CloudnetworkUrl}
               />
-              <p className="product-text">Celtex Network</p>
+              <p className="product-text">KronCash Network</p>
             </div>
           </div>
         </div>
         <div className="fade-left">
           <h1 className="content">
-            Celtex's decentralized architecture is built upon advanced cloud
+            KronCash's decentralized architecture is built upon advanced cloud
             network technology and it forms the foundation of a secure and
             resilient computing environment.
             <br />
             <br />
-            Celtex Nodes, the backbone of this infrastructure, allow users to
+            KronCash Nodes, the backbone of this infrastructure, allow users to
             deploy projects autonomously or collaboratively, fostering a diverse
             and inclusive ecosystem.
             <br />
             <br />
-            Celtex's decentralized computing architecture is meticulously
+            KronCash's decentralized computing architecture is meticulously
             crafted to redefine the landscape of distributed systems. Whether
             you are hosting decentralized apps, deploying blockchain nodes, or
-            remotely accessing your servers, Celtex makes sure that your journey
+            remotely accessing your servers, KronCash makes sure that your journey
             is characterized by security, independence, and innovative
             forward-thinking.
           </h1>
