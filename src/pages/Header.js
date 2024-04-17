@@ -102,7 +102,7 @@ const Header = () => {
                 href="https://app.uniswap.org/swap?outputCurrency=0x6a7eff1e2c355ad6eb91bebb5ded49257f3fed98"
               >
                 <button className="btn btn-link">
-                  <span className="btn-span">BUY KronCash</span>
+                  <span className="btn-span">BUY KCF Token</span>
                 </button>
               </a>
             </div>
@@ -116,7 +116,7 @@ const Header = () => {
             href="https://app.uniswap.org/swap?outputCurrency=0x6a7eff1e2c355ad6eb91bebb5ded49257f3fed98"
           >
             <button className="btn btn-link">
-              <span className="btn-span">BUY KronCash</span>
+              <span className="btn-span">BUY KCF Token</span>
             </button>
           </a>
         </div>
