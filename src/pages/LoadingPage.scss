@@ -1,0 +1,25 @@
+.loading-section {
+  background-color: rgb(8 8 8/1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+
+  img {
+    width: 100px;
+    height: 100px;
+    animation: rotate-360 3s infinite;
+  }
+}
+
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

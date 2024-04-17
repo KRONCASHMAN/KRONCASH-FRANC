@@ -1,0 +1,77 @@
+@font-face {
+  font-family: tokenFont;
+  src: url("./assets/font/customFont.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: tokenFont;
+  color: #fff;
+  background-color: transparent;
+}
+
+:root {
+  --default-color: rgb(118 66 218);
+  --default-hover-color: rgb(80 110 155);
+  --default-background-color: rgb(8 8 8);
+}
+
+body {
+  background-color: var(--default-background-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.btn {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0 solid #000;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  @media (min-width: 1400px) {
+    max-width: 1400px;
+  }
+}
+
+.ml-0 {
+  margin-left: 0px !important;
+}
+
+.ml-80 {
+  margin-left: 80px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--default-color);
+  border-right-width: 0;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+  -webkit-box-shadow: none;
+}
