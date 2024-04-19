@@ -56,7 +56,7 @@ module.exports = {
       // apiKey: "KIW685YTFJESVE3E62YIWD76Z83V3GSR4S" // Polygon network (Name: NFt staking)
    },
    solidity: {
-      version: "0.8.1",
+      version: "0.8.24",
       settings: {
          optimizer: {
             enabled: true
