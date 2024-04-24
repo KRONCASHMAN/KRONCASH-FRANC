@@ -1,6 +1,7 @@
 import React from "react";
 
 // load assets
+import BadgeUrl from "../assets/KRONCASH/7.png";
 import VideoUrl from "../assets/video/router.mp4";
 import "./DetailFirstPage.scss";
 
@@ -30,14 +31,21 @@ const DetailFirstPage = () => {
           </a>
         </div>
         <div className="left ml-80 order-left">
-          <video
+          {/* <video
             src={VideoUrl}
             className="video-tag"
             autoPlay
             loop
             muted
             playsInline
-          ></video>
+          ></video> */}
+          <img
+            className="badge-img"
+            alt="opsec-logo"
+            loading="lazy"
+            decoding="async"
+            src={BadgeUrl}
+          />
         </div>
       </div>
     </div>
