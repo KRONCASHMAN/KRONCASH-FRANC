@@ -8,7 +8,7 @@ import network_img from "../../assets/KRONCASH/16.png";
 import chart_img from "../../assets/KRONCASH/19.png";
 import Innovation_img from "../../assets/KRONCASH/20.png";
 import contract_img from "../../assets/KRONCASH/21.jpg";
-import "./Introduction.scss"
+import "./Introduction.scss";
 
 const Introduction = () => {
     return (
