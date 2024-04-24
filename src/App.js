@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // load the pages
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Header from "./pages/Header";
 import LoadingPage from "./pages/LoadingPage";
 
@@ -27,7 +28,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>

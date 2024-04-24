@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 // load assets
 import logoImageUrl from "../assets/image/name-logo.png";
 import menuSquareUrl from "../assets/image/menu-square.png";
+import voting from "../assets/KRONCASH/voting.gif";
+
 import "./Header.scss";
 
 const RouteList = [
@@ -18,28 +20,14 @@ const RouteList = [
   },
   {
     id: 3,
-    name: "Roadmap",
-    key: "roadmap",
+    name: "Voting System",
+    key: "vote",
+    img: voting
   },
   {
     id: 4,
     name: "Documentation",
-    key: "documentation",
-  },
-  {
-    id: 5,
-    name: "Faq",
-    key: "faq",
-  },
-  {
-    id: 6,
-    name: "Cloudverse",
-    key: "cloudverse",
-  },
-  {
-    id: 7,
-    name: "Cloudsec",
-    key: "cloudsec",
+    key: "about",
   },
 ];
 
@@ -70,6 +58,7 @@ const Header = () => {
                 <Link to={"/" + item.key}>
                   {item.name}
                 </Link>
+                {item.img && (<img src={item.img} style={{position: "absolute", top: "0", marginLeft: "-10px"}}/>)}
               </div>
             );
           })}
