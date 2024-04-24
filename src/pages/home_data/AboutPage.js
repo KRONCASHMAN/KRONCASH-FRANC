@@ -7,72 +7,72 @@ const walletList = [
   {
     id: 1,
     name: 1,
-    url: require("../assets/image/blockchain/1.svg").default,
+    url: require("../../assets/image/blockchain/1.svg").default,
   },
   {
     id: 2,
     name: 2,
-    url: require("../assets/image/blockchain/2.svg").default,
+    url: require("../../assets/image/blockchain/2.svg").default,
   },
   {
     id: 3,
     name: 3,
-    url: require("../assets/image/blockchain/3.svg").default,
+    url: require("../../assets/image/blockchain/3.svg").default,
   },
   {
     id: 4,
     name: 4,
-    url: require("../assets/image/blockchain/4.svg").default,
+    url: require("../../assets/image/blockchain/4.svg").default,
   },
   {
     id: 5,
     name: 5,
-    url: require("../assets/image/blockchain/5.svg").default,
+    url: require("../../assets/image/blockchain/5.svg").default,
   },
   {
     id: 6,
     name: 6,
-    url: require("../assets/image/blockchain/6.svg").default,
+    url: require("../../assets/image/blockchain/6.svg").default,
   },
   {
     id: 7,
     name: 7,
-    url: require("../assets/image/blockchain/7.svg").default,
+    url: require("../../assets/image/blockchain/7.svg").default,
   },
   {
     id: 8,
     name: 8,
-    url: require("../assets/image/blockchain/8.svg").default,
+    url: require("../../assets/image/blockchain/8.svg").default,
   },
   {
     id: 9,
     name: 9,
-    url: require("../assets/image/blockchain/9.svg").default,
+    url: require("../../assets/image/blockchain/9.svg").default,
   },
   {
     id: 10,
     name: 10,
-    url: require("../assets/image/blockchain/10.svg").default,
+    url: require("../../assets/image/blockchain/10.svg").default,
   },
   {
     id: 11,
     name: 11,
-    url: require("../assets/image/blockchain/11.svg").default,
+    url: require("../../assets/image/blockchain/11.svg").default,
   },
   {
     id: 12,
     name: 12,
-    url: require("../assets/image/blockchain/12.svg").default,
+    url: require("../../assets/image/blockchain/12.svg").default,
   },
   {
     id: 13,
     name: 13,
-    url: require("../assets/image/blockchain/13.svg").default,
+    url: require("../../assets/image/blockchain/13.svg").default,
   },
   {
     id: 14,
     name: 14,
-    url: require("../assets/image/blockchain/14.svg").default,
+    url: require("../../assets/image/blockchain/14.svg").default,
   },
 ];
 

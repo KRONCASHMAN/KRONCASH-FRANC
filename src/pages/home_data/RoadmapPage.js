@@ -1,5 +1,5 @@
 import React from "react";
-import RoadMapItem from "../components/RoadMapItem";
+import RoadMapItem from "../../components/RoadMapItem";
 
 // load assets
 import "./RoadmapPage.scss";

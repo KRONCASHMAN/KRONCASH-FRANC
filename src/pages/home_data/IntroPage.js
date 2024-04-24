@@ -1,23 +1,14 @@
 import React from "react";
 
 // load assets
-import IntroUrl from "../assets/KRONCASH/8.png"
-import introVideoUrl from "../assets/video/bg-hero.mp4";
-import MagnicficCanvas from "../components/MagnicficCanvas";
-import LogoImageUrl from "../assets/image/name-logo.png";
+import IntroUrl from "../../assets/KRONCASH/8.png"
+import MagnicficCanvas from "../../components/MagnicficCanvas";
+import LogoImageUrl from "../../assets/image/name-logo.png";
 import "./IntroPage.scss";
 
 const IntroPage = () => {
   return (
     <div className="intro-section">
-      {/* <video
-        src={introVideoUrl}
-        className="video-tag"
-        autoPlay
-        loop
-        muted
-        playsInline
-      ></video> */}
       <img
         className="intro-img"
         alt="opsec-logo"

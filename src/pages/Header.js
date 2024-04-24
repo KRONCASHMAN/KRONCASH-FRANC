@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from 'react-router-dom';
 // load assets
 import logoImageUrl from "../assets/image/name-logo.png";
 import menuSquareUrl from "../assets/image/menu-square.png";
@@ -9,7 +9,7 @@ const RouteList = [
   {
     id: 1,
     name: "Home",
-    key: "home",
+    key: "",
   },
   {
     id: 2,
@@ -67,13 +67,9 @@ const Header = () => {
           {RouteList?.map((item, key) => {
             return (
               <div className="list-item" key={key}>
-                <a
-                  href={"#" + item.key}
-                  target="_self"
-                  rel="noopener noreferrer"
-                >
+                <Link to={"/" + item.key}>
                   {item.name}
-                </a>
+                </Link>
               </div>
             );
           })}

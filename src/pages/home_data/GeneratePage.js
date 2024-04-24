@@ -1,16 +1,16 @@
 import React from "react";
 
 // load assets
-import LogoUrl from "../assets/image/name-logo.png";
-import CloudverseUrl from "../assets/image/cloudverse.png";
-import CloudsecUrl from "../assets/image/cloudsec.png";
-import CloudnetworkUrl from "../assets/image/cloudnetwork.png";
+import LogoUrl from "../../assets/image/name-logo.png";
+import CloudverseUrl from "../../assets/image/cloudverse.png";
+import CloudsecUrl from "../../assets/image/cloudsec.png";
+import CloudnetworkUrl from "../../assets/image/cloudnetwork.png";
 import "./GeneratePage.scss";
 
 const GeneratePage = () => {
   return (
     <div className="container generate-section">
-      <div className="sub-section">
+      <div className="sub-section" id="about">
         <div className="fade-right">
           <img
             className="logo"

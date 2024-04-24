@@ -1,8 +1,7 @@
 import React from "react";
 
 // load assets
-import BadgeUrl from "../assets/KRONCASH/7.png";
-import VideoUrl from "../assets/video/router.mp4";
+import BadgeUrl from "../../assets/KRONCASH/7.png";
 import "./DetailFirstPage.scss";
 
 const DetailFirstPage = () => {
@@ -31,14 +30,6 @@ const DetailFirstPage = () => {
           </a>
         </div>
         <div className="left ml-80 order-left">
-          {/* <video
-            src={VideoUrl}
-            className="video-tag"
-            autoPlay
-            loop
-            muted
-            playsInline
-          ></video> */}
           <img
             className="badge-img"
             alt="opsec-logo"

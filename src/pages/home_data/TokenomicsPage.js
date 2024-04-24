@@ -1,10 +1,10 @@
 import React from "react";
 
 // load assets
-import BurnImageUrl from "../assets/image/tokenomics/burn-1.png.webp";
-import SupplyImageUrl from "../assets/image/tokenomics/supply-1.png.webp";
-import TaxesImageUrl from "../assets/image/tokenomics/taxes-1.png.webp";
-import TeamImageUrl from "../assets/image/tokenomics/team-1.png.webp";
+import BurnImageUrl from "../../assets/image/tokenomics/burn-1.png.webp";
+import SupplyImageUrl from "../../assets/image/tokenomics/supply-1.png.webp";
+import TaxesImageUrl from "../../assets/image/tokenomics/taxes-1.png.webp";
+import TeamImageUrl from "../../assets/image/tokenomics/team-1.png.webp";
 import "./TokenomicsPage.scss";
 
 const TokenomicsPage = () => {
