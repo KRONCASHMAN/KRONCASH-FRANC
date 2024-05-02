@@ -4,18 +4,32 @@ async function main() {
 
     const [deployer] = await ethers.getSigners();
     const deployerAddress = await deployer.getAddress();
-    const message0 = 'Deploying Token staking with address: ' + deployerAddress;
+    const message0 = 'Deploying KronletCashFrancToken with address: ' + deployerAddress;
     console.log(message0);
     //////////////////////////////////////////////////////////////////////
 
     /////////////////////////////////////////////////////////////////////////
   
-    const TOKENFACTORY = await ethers.getContractFactory('Staking');
-    const tokenFactory = await TOKENFACTORY.deploy("0x8Fb7a3d213C3a2B605386cd3617fE0eaaB7F3b1c");
-    // const tokenFactory = await TOKENFACTORY.deploy('A2HeroesTest', 'A2HT', 'Monika', '0x42cCf0f32453547dACB0e36bf5dBcC03Fd234ea5');
-    await tokenFactory.deployed();
-    const tokenFactoryAddress = tokenFactory.address
-    console.log('Token contract deployed at', tokenFactoryAddress);
+    const KCFToken = await ethers.getContractFactory('KronletCashFrancToken');
+    const KCFtokenFactory = await KCFToken.deploy();
+  
+    await KCFtokenFactory.deployed();
+    const KCFtokenFactoryAddress = KCFtokenFactory.address
+    console.log('KronletCashFrancToken contract deployed at', KCFtokenFactoryAddress);
+
+
+    //////////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////////////////////////////////////
+    const message1 = 'Deploying the KronletFrancToken: ' + deployerAddress;
+    console.log(message1);
+
+    const KFToken = await ethers.getContractFactory('KronletCashFrancToken');
+    const KFtokenFactory = await KFToken.deploy();
+  
+    await KFtokenFactory.deployed();
+    const KFtokenFactoryAddress = KFtokenFactory.address
+    console.log('KronletFrancToken contract deployed at', KFtokenFactoryAddress);
   }
   
   // We recommend this pattern to be able to use async/await everywhere

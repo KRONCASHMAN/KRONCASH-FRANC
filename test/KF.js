@@ -1,13 +1,13 @@
 const { loadFixture } = require("@nomicfoundation/hardhat-toolbox/network-helpers");
 const { expect } = require("chai");
 
-describe("KCFToken", function () {
+describe("KFToken", function () {
     async function deployKCFContract() {
 
         // Contracts are deployed using the first signer/account by default
         const [deployer] = await ethers.getSigners();
 
-        const KCFToken = await ethers.getContractFactory("KronletCashFrancToken");
+        const KCFToken = await ethers.getContractFactory("KronletFrancToken");
         const kcfTokenInstance = await KCFToken.deploy();
 
         return { kcfTokenInstance, deployer };

@@ -33,7 +33,7 @@ module.exports = {
          accounts: [`0x${PRIVATE_KEY}`],
       },
       sepolia: {
-         url: `https://eth-sepolia.g.alchemy.com/v2/iihdOhGECTy74Pz0pQ5HBY1FK4q9ytLU`,
+         url: `https://sepolia.infura.io/v3/e89d286f38f848c885d1fb6fdda37b13`,
          chainId: 11155111,
          accounts: [`0x${PRIVATE_KEY}`],
       },
@@ -49,11 +49,13 @@ module.exports = {
    },
    etherscan: {
       // Your API key for Etherscan
-      apiKey: "IE96DG2BG4V1PDHSQCDBF23IQ2K11JUKVV" //Bsc network
+      apiKey: '7IJ1MM5VQMQY39F438P76W4ZZVBGQ5FB46', // ethereum network
+      // apiKey: "IE96DG2BG4V1PDHSQCDBF23IQ2K11JUKVV" //Bsc network
       // apiKey: "JCWWJWGP9581ZK6NC428EFZZXTEI9TGG35" //ethereum network
       // apiKey: "ANPSS66Y3PDUWVZ978VQFBA14EYWSBITHT" //ethereum netowrk (Name: TokenGenerating)
       // apiKey: "FHMIJR9YNE8UZ1WEZGS3QTFW32MHY3AGUI" //Fantom network (Name: NFt staking)
       // apiKey: "KIW685YTFJESVE3E62YIWD76Z83V3GSR4S" // Polygon network (Name: NFt staking)
+      url: "https://api.etherscan.io/api"
    },
    solidity: {
       version: "0.8.24",
