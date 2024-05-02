@@ -36,7 +36,7 @@ const DetailFirstPage = () => {
             rel="noreferrer"
             className="learn-btn"
           >
-            <button type="button" className="btn">
+            <button type="button">
               <span>Learn More</span>
             </button>
           </a>

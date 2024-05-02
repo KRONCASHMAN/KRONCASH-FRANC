@@ -14,7 +14,7 @@
   background-color: transparent;
   z-index: 1000;
   backdrop-filter: blur(24px);
-  position: relative;
+  position: fixed;
 
   @media (max-width: 992px) {
     padding-top: 0.5rem;
@@ -30,6 +30,57 @@
     flex-direction: row;
     background-color: inherit;
 
+    .toggle-item {
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      margin-right: 30px;
+    }
+
+    .theme-section {
+      background-color: #b7bdc6;
+      position: relative;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      border-radius: 5px;
+      transition: 0.2s all ease-in-out;
+
+      .theme-icon {
+        font-size: 16px;
+        background-color: #fff;
+        width: 18px;
+        height: 18px;
+        padding: 2px;
+        border-radius: 5px;
+        transition: 0.2s all ease-in-out;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #000;
+
+        path {
+          color: #000;
+        }
+      }
+
+      .left {
+        left: 2px;
+      }
+
+      .right {
+        right: 2px;
+      }
+    }
+
+    .right-theme {
+      background-color: #474d57 !important;
+    }
     .logo {
       background-color: inherit;
 
@@ -64,7 +115,7 @@
         height: 2.5rem;
 
         &:hover {
-          color: var(--default-hover-color);
+          color: rgb(80 110 155);
         }
 
         @media (max-width: 992px) {
@@ -73,7 +124,7 @@
           align-items: center;
 
           &:hover {
-            background-color: var(--default-hover-color);
+            background-color: rgb(80 110 155);
             color: #fff;
           }
         }
@@ -100,7 +151,7 @@
         flex-direction: column;
         left: 0;
         width: 100%;
-        background-color: var(--default-background-color);
+        background-color: rgb(8 8 8);
         backdrop-filter: blur(24px);
         padding: 1rem;
       }
@@ -114,7 +165,7 @@
         height: 2.5rem;
 
         &:hover {
-          color: var(--default-hover-color);
+          color: rgb(80 110 155);
         }
 
         @media (max-width: 992px) {
@@ -124,7 +175,7 @@
           border-radius: 0.3rem;
 
           &:hover {
-            background-color: var(--default-hover-color);
+            background-color: rgb(80 110 155);
             color: #fff;
           }
         }
@@ -159,7 +210,7 @@
             color: rgb(255 255 255/1);
             box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
               0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            background-color: var(--default-color);
+            background-color: rgb(118 66 218);
             border-radius: 0.5rem;
             overflow: hidden;
             width: 8rem;
@@ -173,14 +224,14 @@
             transition: 0.2s all ease-in-out;
 
             &:hover {
-              background-color: var(--default-hover-color);
+              background-color: rgb(80 110 155);
             }
 
             &::before {
               transition-duration: 0.3s;
               content: "";
               animation-duration: 0.3s;
-              background-color: var(--default-hover-color);
+              background-color: rgb(80 110 155);
             }
 
             @media (max-width: 992px) {
@@ -216,7 +267,7 @@
           color: rgb(255 255 255/1);
           box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
             0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          background-color: var(--default-color);
+          background-color: rgb(118 66 218);
           border-radius: 0.5rem;
           overflow: hidden;
           width: 8rem;
@@ -230,14 +281,14 @@
           transition: 0.2s all ease-in-out;
 
           &:hover {
-            background-color: var(--default-hover-color);
+            background-color: rgb(80 110 155);
           }
 
           &::before {
             transition-duration: 0.3s;
             content: "";
             animation-duration: 0.3s;
-            background-color: var(--default-hover-color);
+            background-color: rgb(80 110 155);
           }
 
           .btn-span {

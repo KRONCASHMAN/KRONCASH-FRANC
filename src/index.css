@@ -13,14 +13,8 @@
   background-color: transparent;
 }
 
-:root {
-  --default-color: rgb(118 66 218);
-  --default-hover-color: rgb(80 110 155);
-  --default-background-color: rgb(8 8 8);
-}
-
 body {
-  background-color: var(--default-background-color);
+  background-color: rgb(8 8 8);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -67,7 +61,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: var(--default-color);
+  background-color: rgb(118 66 218);
   border-right-width: 0;
 }
 

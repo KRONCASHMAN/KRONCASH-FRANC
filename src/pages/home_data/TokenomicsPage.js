@@ -14,8 +14,8 @@ const TokenomicsPage = () => {
         <div className="title-section">
           <h1>Tokenomics</h1>
           <p className="text">
-            Hard-coded into the KronCash contract are the following tokenomics, we
-            are unable to change them and are fully rug-proof!
+            Hard-coded into the KronCash contract are the following tokenomics,
+            we are unable to change them and are fully rug-proof!
           </p>
           <div className="flex">
             <h1 className="text">Key Features</h1>

@@ -59,11 +59,11 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <span className="copyright">
-            <span>©{new Date().getFullYear()}</span> KronCash - All Rights
-            Reserved
-          </span>
         </div>
+        <div></div>
+      </div>
+      <div className="copyright">
+        <span>©{new Date().getFullYear()}</span> KronCash - All Rights Reserved
       </div>
     </div>
   );

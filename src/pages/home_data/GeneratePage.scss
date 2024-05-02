@@ -55,7 +55,7 @@
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
           Liberation Mono, Courier New, monospace;
         text-transform: uppercase;
-        color: rgb(255 255 255/1);
+        color: var(--title-color);
         text-align: start;
         font-size: 3rem;
         line-height: 1;
@@ -63,7 +63,7 @@
         background-color: transparent;
 
         @media (max-width: 768px) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -75,7 +75,7 @@
         .text {
           font-size: inherit;
           font-weight: inherit;
-          color: var(--default-color);
+          color: rgb(118 66 218);
           background-color: transparent;
         }
 
@@ -85,7 +85,7 @@
           width: 100%;
           border-top-style: solid;
           border-top-width: 2px;
-          border-color: var(--default-color);
+          border-color: rgb(118 66 218);
           background-color: transparent;
         }
       }
@@ -124,12 +124,13 @@
           .product-text {
             margin-top: 0.5rem;
             font-size: 24px;
-            color: rgb(255 255 255/1);
+            color: var(--content-text);
             width: 50%;
             background-color: transparent;
 
             @media (max-width: 512px) {
               width: 100%;
+              font-size: 1.3rem;
             }
           }
         }
@@ -157,7 +158,7 @@
       .content {
         font-weight: 300;
         line-height: 1.625;
-        color: rgb(255 255 255 / 1);
+        color: var(--content-text);
         text-align: start;
         width: 653px;
         font-size: 20px;

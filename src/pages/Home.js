@@ -9,25 +9,23 @@ import DetailThirdPage from "./home_data/DetailThirdPage";
 import TokenomicsPage from "./home_data/TokenomicsPage";
 import FaqPage from "./home_data/FaqPage";
 import RoadmapPage from "./home_data/RoadmapPage";
-import ContactPage from "./home_data/ContactPage";
 import Footer from "./Footer";
 
 const Home = () => {
-    return (
-        <div className="main-background">
-            <IntroPage />
-            <GeneratePage />
-            <DetailFirstPage />
-            <DetailSecondPage />
-            <DetailThirdPage />
-            <AboutPage />
-            <TokenomicsPage />
-            <FaqPage />
-            <RoadmapPage />
-            <ContactPage />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="main-background">
+      <IntroPage />
+      <GeneratePage />
+      <DetailFirstPage />
+      <DetailSecondPage />
+      <DetailThirdPage />
+      <AboutPage />
+      <TokenomicsPage />
+      <FaqPage />
+      <RoadmapPage />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

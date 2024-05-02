@@ -22,7 +22,7 @@
         text-align: center;
         line-height: 1;
         font-size: 3rem;
-        color: rgb(255 255 255/1);
+        color: var(--title-color);
 
         @media (max-width: 768px) {
           font-size: 2rem;
@@ -35,11 +35,13 @@
       width: 100%;
 
       .item {
+        margin: 0 auto;
+        width: 86%;
         border-radius: 0.5rem;
         border-bottom-width: 1px;
         border-color: rgb(82 82 91/1);
         border-bottom-style: solid;
-        background-color: rgb(20 20 20 / 1);
+        background-color: rgba(20, 20, 20, 0.511);
         padding: 1rem 2.5rem 1rem 2.5rem;
 
         .content {

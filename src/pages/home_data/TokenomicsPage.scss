@@ -17,6 +17,7 @@
     }
 
     .title-section {
+      margin: 0 auto;
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -37,7 +38,8 @@
         text-align: center;
         line-height: 1;
         font-size: 3rem;
-        color: rgb(255, 255, 255);
+        width: 100%;
+        color: var(--title-color);
         text-transform: uppercase;
 
         @media (max-width: 512px) {
@@ -46,7 +48,7 @@
       }
 
       p {
-        color: rgb(200, 200, 200);
+        color: var(--content-text);
         margin-top: 2rem;
       }
 
@@ -54,11 +56,13 @@
         display: flex;
         margin-top: 1.5rem;
         width: 100%;
+        justify-content: start;
+        text-align: left;
 
         .text {
           font-size: inherit;
           font-weight: inherit;
-          color: var(--default-color);
+          color: rgb(118 66 218);
         }
 
         .line {
@@ -67,7 +71,7 @@
           width: 50%;
           border-top-style: solid;
           border-top-width: 2px;
-          border-color: var(--default-color);
+          border-color: rgb(118 66 218);
         }
       }
     }
@@ -137,7 +141,7 @@
 
           p {
             line-height: 2rem;
-            color: rgb(200, 200, 200);
+            color: var(--content-text);
           }
         }
       }

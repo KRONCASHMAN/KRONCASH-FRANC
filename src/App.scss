@@ -4,5 +4,10 @@
 }
 
 .main-background {
-  background-color: rgb(8 8 8 / 1);
+  background-image: var(--bg-image);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 100px;
 }

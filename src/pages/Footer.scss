@@ -11,7 +11,6 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgb(115 115 115 / 1);
-    color: rgb(255 255 255/1);
     background: linear-gradient(90deg, #080808 63.22%, rgba(8, 8, 8, 0));
     background-image: url(../assets/image/footer.webp);
     background-size: cover;
@@ -35,6 +34,13 @@
         justify-content: center;
         align-items: center;
         gap: 4rem;
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        position: relative;
       }
 
       .first {
@@ -62,7 +68,7 @@
             text-decoration: inherit;
 
             &:hover {
-              color: var(--default-hover-color);
+              color: rgb(80 110 155);
             }
           }
         }
@@ -92,29 +98,27 @@
             text-decoration: inherit;
 
             &:hover {
-              color: var(--default-hover-color);
+              color: rgb(80 110 155);
             }
           }
         }
       }
 
-      .copyright {
-        position: absolute;
-        z-index: 10;
-        padding-top: 2rem;
-        bottom: 1rem;
-        right: 5rem;
-
-        span {
-          color: var(--default-color);
-        }
-
-        @media (max-width: 768px) {
-          right: 50%;
-          transform: translateX(50%);
-          text-align: center;
-        }
+      @media (max-width: 768px) {
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
       }
     }
+  }
+}
+.copyright {
+  padding-bottom: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 19px;
+
+  span {
+    color: #0fe0f7;
   }
 }

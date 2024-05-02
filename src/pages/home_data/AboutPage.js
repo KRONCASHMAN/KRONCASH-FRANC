@@ -52,26 +52,11 @@ const walletList = [
   {
     id: 10,
     name: 10,
-    url: require("../../assets/image/blockchain/10.svg").default,
+    url: require("../../assets/image/blockchain/11.svg").default,
   },
   {
     id: 11,
     name: 11,
-    url: require("../../assets/image/blockchain/11.svg").default,
-  },
-  {
-    id: 12,
-    name: 12,
-    url: require("../../assets/image/blockchain/12.svg").default,
-  },
-  {
-    id: 13,
-    name: 13,
-    url: require("../../assets/image/blockchain/13.svg").default,
-  },
-  {
-    id: 14,
-    name: 14,
     url: require("../../assets/image/blockchain/14.svg").default,
   },
 ];

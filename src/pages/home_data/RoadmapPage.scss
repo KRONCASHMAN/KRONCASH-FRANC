@@ -32,13 +32,13 @@
         text-align: center;
         line-height: 1;
         font-size: 3rem;
-        color: rgb(255, 255, 255);
+        color: var(--title-color);
         text-transform: uppercase;
         position: relative;
         z-index: 2;
 
         @media (max-width: 512px) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -46,7 +46,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        color: #141616;
+        color: #e0d5d565;
         font-size: 8rem;
         transform: translate(-50%, -50%);
         z-index: 0;
@@ -71,7 +71,7 @@
       flex-direction: column;
 
       .stickLine {
-        background-color: var(--default-color);
+        background-color: rgb(118 66 218);
         width: 2px;
         height: 100%;
         position: absolute;
