@@ -45,19 +45,47 @@ library SafeMath {
   }
 }
 
-contract KronletCashFrancToken is ERC20 {
+contract KronletFrancToken is ERC20 {
     
     using SafeMath for uint256;
 
     address public owner; // owner address
+    uint256 public inflationRate; // Inflation rate as a percentage (e.g., 2% inflation = 2)
+    uint256 public reserveRatio = 20; // Reserve requirement in percentage
+    uint256 public reserveBalance; // current reserve balance
+    bool public reserveRequirementMet; // Flag to track if reserve requirement is met
     
-    constructor() ERC20("Kronlet Cash Franc", "KCF") {
+    constructor() ERC20("Kronlet Franc", "KF") {
+        inflationRate = 7; // Example inflation rate of 7% per year
         owner = msg.sender; // Set Owner address
     }
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
         _;
+    }
+
+    function adjustSupply() public onlyOwner {
+        if (reserveRequirementMet) {
+            // Calculate the new total supply based on the inflation rate
+            uint256 currentSupply = totalSupply();
+            uint256 newSupply = (currentSupply * (100 + inflationRate)) / 100;
+
+            // Mint new tokens to adjust the supply
+            _mint(owner, newSupply - currentSupply);
+        } else {
+            // square root the inflation rate if reserve requirement is not met
+            uint256 inflationEffect = inflationRate.mul(inflationRate).div(10000);  // Square root effect
+            uint256 newInflationRate = inflationEffect < 1 ? inflationEffect : 1;  // Limit the inflation effect
+            inflationRate = newInflationRate;
+
+            reserveRequirementMet = true; // Set reserve requirement met
+        }
+    }
+
+    function updateReserveBalance(uint256 _newBalance) public onlyOwner {
+        reserveBalance = _newBalance;
+        reserveRequirementMet = reserveBalance >= totalSupply().mul(reserveRatio).div(100);
     }
 
     // General mint function owner
