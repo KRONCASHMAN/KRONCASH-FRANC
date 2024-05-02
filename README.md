@@ -1,4 +1,6 @@
 **KronletFrancToken Contract Explain**
+
+
 This Solidity smart contract, named `KronletFrancToken`, is an ERC20 token that includes additional functionalities related to inflation adjustment and reserve requirements. Let's break down the key components and logic of this contract:
 
 1. **SafeMath Library**: The contract includes a SafeMath library for arithmetic operations to prevent overflows and underflows in uint256 calculations.
@@ -32,6 +34,8 @@ This Solidity smart contract, named `KronletFrancToken`, is an ERC20 token that 
 Overall, this smart contract introduces additional functionality beyond the standard ERC20 token by incorporating inflation adjustment mechanisms and reserve requirements. It provides the ability to mint, burn, adjust supply, and manage the reserve balance as per the defined logic within the contract.
 
 **KronletCashFrancToken Contract Explain**
+
+
 This Solidity smart contract, named `KronletCashFrancToken`, is an ERC20 token that includes basic functionalities for minting and burning tokens. Let's delve into the key components and logic of this contract:
 
 1. **SafeMath Library**: Similar to the previous contract, this contract also includes the SafeMath library for performing arithmetic operations securely to prevent overflows and underflows in uint256 calculations.
