@@ -11,9 +11,9 @@ const IntroPage = () => {
     <div className="intro-section">
       <div class="intro-title-img">
         <div class="intro-title">
-          KRONCASH
+          TOKENIZING HISTORY OF
           <br />
-          DAPP
+          FRANCES ECONOMIC EMPIRE
         </div>
         <div className="intro-img">
           <img

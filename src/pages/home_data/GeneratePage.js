@@ -2,9 +2,9 @@ import React from "react";
 
 // load assets
 import LogoUrl from "../../assets/image/name-logo.png";
-import CloudverseUrl from "../../assets/image/cloudverse.png";
-import CloudsecUrl from "../../assets/image/cloudsec.png";
-import CloudnetworkUrl from "../../assets/image/cloudnetwork.png";
+import CloudverseUrl from "../../assets/KRONCASH/coat.png";
+import CloudsecUrl from "../../assets/KRONCASH/KronCash.png";
+import CloudnetworkUrl from "../../assets/KRONCASH/KCF.png";
 import "./GeneratePage.scss";
 
 const GeneratePage = () => {
@@ -20,12 +20,12 @@ const GeneratePage = () => {
             src={LogoUrl}
           />
           <h1 className="title">
-            PIONEERING THE
+            TOKENIZING HISTORY OF
             <br />
-            NEXT GENERATION
+            GREAT ECONOMIES OF THE PAST
           </h1>
           <div className="flex">
-            <h1 className="text">PRODUCTS</h1>
+            <p className="text">Lordship NFTS - COAT OF ARMS</p>
             <div className="line"></div>
           </div>
           <div className="product">
@@ -37,7 +37,7 @@ const GeneratePage = () => {
                 decoding="async"
                 src={CloudverseUrl}
               />
-              <p className="product-text">KronCash Cloudverse</p>
+              <p className="product-text">COAT OF ARMS NFT</p>
             </div>
             <div className="product-item">
               <img
@@ -47,7 +47,7 @@ const GeneratePage = () => {
                 decoding="async"
                 src={CloudsecUrl}
               />
-              <p className="product-text">CloudSec Router</p>
+              <p className="product-text">KF</p>
             </div>
             <div className="product-item">
               <img
@@ -57,28 +57,20 @@ const GeneratePage = () => {
                 decoding="async"
                 src={CloudnetworkUrl}
               />
-              <p className="product-text">KronCash Network</p>
+              <p className="product-text">KCF</p>
             </div>
           </div>
         </div>
         <div className="fade-left">
           <h1 className="content">
-            KronCash's decentralized architecture is built upon advanced cloud
-            network technology and it forms the foundation of a secure and
-            resilient computing environment.
+            KronCash is a decentralized finance platform that tokenizes the historical economic data of the former French franc currency.
+            It offers two tokens - Kronlet Francs (KF) which is a stable asset tracking the franc's inflation-adjusted purchasing power, and Kroncash Francs (KCF) which is a more volatile token reflecting the franc's historical market dynamics.
             <br />
             <br />
-            KronCash Nodes, the backbone of this infrastructure, allow users to
-            deploy projects autonomously or collaboratively, fostering a diverse
-            and inclusive ecosystem.
+            This allows investors to gain exposure to the franc's past economic strength while hedging against inflation.
             <br />
             <br />
-            KronCash's decentralized computing architecture is meticulously
-            crafted to redefine the landscape of distributed systems. Whether
-            you are hosting decentralized apps, deploying blockchain nodes, or
-            remotely accessing your servers, KronCash makes sure that your journey
-            is characterized by security, independence, and innovative
-            forward-thinking.
+            The platform utilizes blockchain technology, smart contracts and decentralized governance to ensure transparency, security and community control. KronCash aims to provide an innovative alternative to traditional currencies and investment vehicles by resurrecting the economic legacy of the French franc.
           </h1>
         </div>
       </div>

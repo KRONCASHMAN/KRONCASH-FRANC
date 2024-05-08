@@ -30,18 +30,18 @@
       font-family: "Comic Sans MS", cursive, sans-serif;
       width: 40%;
       line-height: 90px;
-      font-size: 70px;
+      font-size: 40px;
       font-weight: bold;
       color: var(--pro-color);
       text-shadow: 7px 7px 5px black;
       @media (max-width: 750px) {
         width: 100%;
-        font-size: 50px;
+        font-size: 25px;
         text-align: center;
       }
     }
     .intro-img {
-      width: 38%;
+      width: 50%;
       @media (max-width: 750px) {
         width: 50%;
       }

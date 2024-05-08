@@ -29,7 +29,7 @@ const RouteList = [
   {
     id: 4,
     name: "Documentation",
-    key: "about",
+    key: "doc",
   },
   {
     id: 5,

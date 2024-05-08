@@ -9,47 +9,47 @@ const FaqPage = () => {
       id: 1,
       flag: 0,
       question:
-        "What sets KronCash apart from other project deployment platforms?",
+        "What makes KronCash's approach to inflation adjustment unique in the stablecoin market?",
       answer:
-        "One unique feature of KronCash is its decentralized architecture, which allows users total control over their projects. Because of its decentralization, KronCash stands apart in the field of project deployment because of its increased security and autonomy",
+        "KronCash differentiates itself by pegging its stablecoin, Kronlet, not just to a static monetary value but to historical French Franc exchange rates, adjusted for inflation using real-time U.S. CPI data. This approach ensures that the value of Kronlets remains stable and reflective of true economic conditions, offering users a hedge against inflation and preserving purchasing power in a way that traditional stablecoins tied to current fiat currencies cannot match.",
     },
     {
       id: 2,
       flag: 0,
       question:
-        "How does KronCash leverage supercomputing power and what value does it bring?",
+        "How does KronCash's decentralized governance model empower its users?",
       answer:
-        "With the integration of supercomputing capabilities, KronCash offers users computational capability never before seen. This leads to unrivaled performance when handling data-intensive operations, complicated simulations, and scientific research, establishing KronCash as a platform at the forefront of innovation.",
+        "KronCash leverages a decentralized autonomous organization (DAO) structure, which allows all token holders to participate in key decision-making processes through a transparent voting mechanism. This model ensures that the development and operational decisions reflect the community’s interests and needs, fostering a truly user-driven ecosystem.",
     },
     {
       id: 3,
       flag: 0,
-      question: "What is the significance of KronCash’s mesh network technology?",
+      question: "What role does KronCash play in supporting French businesses and cultural projects?",
       answer:
-        "The mesh network from KronCash guarantees a durable architecture, lowers latency, and improves network connectivity. KronCash distinguishes itself by eliminating single points of failure and offering consumers a dependable and effective computing environment.",
+        "Through its innovative financial mechanisms and community-focused initiatives, KronCash supports French businesses by facilitating easier access to global markets and providing a stable digital currency for transactions. Additionally, a portion of transaction fees generated within the KronCash ecosystem is allocated to fund cultural reservation projects and public works, reinforcing the national heritage and promoting cultural identity.",
     },
     {
       id: 4,
       flag: 0,
       question:
-        "Can you elaborate on KronCash’s GPU acceleration and how versatile it is?",
+        "How does the integration of blockchain technology enhance the security and efficiency of KronCash?",
       answer:
-        "KronCash combines a series of high-performance GPUs to support a wide range of applications, including graphics-intensive projects and AI/ML applications. KronCash stands out in providing effective and enhanced performance because of its flexible GPU capabilities.",
+        "KronCash utilizes blockchain technology to ensure that all transactions are secure, transparent, and immutable. This not only enhances security by reducing the risk of fraud and tampering but also increases efficiency by streamlining transactions and reducing the need for intermediaries.",
     },
     {
       id: 5,
       flag: 0,
-      question: "What makes KronCash privacy-centric?",
+      question: "Can you explain the significance of KronCash’s venture into DeFi and how it benefits users?",
       answer:
-        "KronCash places a high priority on privacy and applies this design philosophy to all infrastructure layers. KronCash stands out as a platform dedicated to protecting user privacy since user data is kept private and secure.",
+        "KronCash actively participates in the decentralized finance (DeFi) landscape by offering features like staking, liquidity pools, and yield farming. These opportunities allow users to earn returns on their investments and engage with the financial system in a more interactive and profitable way, compared to traditional banking solutions.",
     },
     {
       id: 6,
       flag: 0,
       question:
-        "What are the attributes of OpsSec’s RWA and how does it benefit users?",
+        "What advancements has KronCash made in tokenizing assets, and how does this impact the ecosystem?",
       answer:
-        "KronCash presents the idea of tokenizing physical assets, enabling users to represent and exchange physical goods using blockchain technology. This improves the KronCash ecosystem's liquidity, accessibility, and transparency.",
+        "By tokenizing physical and digital assets, KronCash allows users to securely and efficiently represent ownership of a wide range of assets on the blockchain. This tokenization improves liquidity, makes assets easier to trade, and opens up new investment opportunities, thereby enhancing the overall dynamism and accessibility of the KronCash ecosystem.",
     },
   ]);
 

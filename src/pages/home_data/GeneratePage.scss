@@ -57,7 +57,7 @@
         text-transform: uppercase;
         color: var(--title-color);
         text-align: start;
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1;
         margin-top: 1.5rem;
         background-color: transparent;
@@ -116,14 +116,13 @@
           }
 
           .product-img {
-            width: 72px;
-            height: 72p;
+            width: 100px;
             background-color: transparent;
           }
 
           .product-text {
             margin-top: 0.5rem;
-            font-size: 24px;
+            font-size: 20px;
             color: var(--content-text);
             width: 50%;
             background-color: transparent;

@@ -1,7 +1,7 @@
 import React from "react";
 
 // load assets
-import BadgeUrl from "../../assets/KRONCASH/6.png";
+import BadgeUrl from "../../assets/KRONCASH/NFTLORD.png";
 import "./DetailFirstPage.scss";
 
 const DetailFirstPage = () => {
@@ -19,15 +19,13 @@ const DetailFirstPage = () => {
         </div>
         <div className="right">
           <div className="title">
-            <h1>KronCash Network</h1>
+            <h1>NFT LORDSHIP + Knights</h1>
             <p className="text">
-              Revolutionizing web hosting with decentralization and freedom.
-              Experience the power of hosting what you want, free from
-              censorship or monitoring. Leveraging IPFS technology, your
-              websites are securely hosted, and once deployed, even we can't
-              take them down. Enjoy the ease and speed of setup, with hosting
-              ready in less than 5 minutes. Join us in shaping a decentralized
-              future for web hosting with KronCash.
+              Within the KronCash ecosystem, owning a Coat of Arms NFT signifies membership in an exclusive digital aristocracy, granting holders a noble status that transcends mere financial investment.
+
+              These limited NFTs, each representing one of the prestigious communes of France, elevate you to the ranks of nobility, bestowing lordship rights and elevated voting power over key decisions that shape the future of this innovative platform. By acquiring a Coat of Arms NFT, you not only secure an esteemed position in the decentralized governance structure but also directly contribute to preserving France's rich cultural heritage through the financing of public good initiatives.
+
+              In essence, these NFTs symbolize your commitment to upholding the nation's prestigious legacy while wielding influential power as a member of the KronCash nobility
             </p>
           </div>
           <a
