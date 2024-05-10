@@ -27,13 +27,17 @@
     }
 
     .intro-title {
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: BEBAS NENUE;
       width: 40%;
       line-height: 90px;
-      font-size: 40px;
+      font-size: 45px;
       font-weight: bold;
-      color: var(--pro-color);
-      text-shadow: 7px 7px 5px black;
+      color: var(--title-color);
+      .font-small {
+        font-family: BEBAS NENUE;
+        color: var(--title-color);
+        font-size: 35px;
+      }
       @media (max-width: 750px) {
         width: 100%;
         font-size: 25px;

@@ -12,7 +12,7 @@ const TokenomicsPage = () => {
     <div className="container tokenomics-section">
       <div className="sub-section">
         <div className="title-section">
-          <h1>Tokenomics</h1>
+          <h1>DUAL Tokenomics</h1>
           <p className="text">
             Hard-coded into the KronCash contract are the following tokenomics,
             we are unable to change them and are fully rug-proof!

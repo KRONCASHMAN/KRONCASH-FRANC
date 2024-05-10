@@ -7,54 +7,24 @@ import "./RoadmapPage.scss";
 const tempList = [
   {
     id: 0,
-    title: "Launch",
-    content: "Moonstar is born and a new journey start.",
+    title: "Conceptualization and Planning",
+    content:
+      "-Whitepaper Creation  - Define the mission, vision, and goals of Kroncash and Kronlet.  - Specify technical requirements for stablecoin and other ecosystem components.  - Feasibility Study  - Research legal and regulatory requirements for operating in targeted jurisdictions.  - Analyze market demand and competitors in the stablecoin space. ",
     flag: true,
   },
   {
     id: 1,
-    title: "INITIAL EXPOSURE",
-    content: "Advertising, influencers marketing push",
+    title: "Technical Infrastructure Setup",
+    content:
+      "- Smart Contract Development  - Design and develop the core smart contracts for Kronlet stablecoin. - Deployment on Testnet  - Use Hardhat framework for developing and debugging and deploying.  - Deploy contracts on a testnet for trial runs and debugging. - Security Audits   - Engage third-party services for security audits of the smart contracts.",
     flag: true,
   },
   {
     id: 2,
-    title: "CORE TEAM BUILDING",
-    content: "We are at 50% at the moment and looking for some new members",
+    title: "DApp and User Interface",
+    content:
+      "- Web Platform Development  - Design and develop the initial version of the DApp website interface. - Web3 Integration   - Integrate Web3 functionalities to allow users to interact with contracts directly from the DApp. - Wallet Integration  - Ensure compatibility with major wallets (e.g.,MetaMask, WalletConnect, Coinbase, Binance).",
     flag: true,
-  },
-  {
-    id: 3,
-    title: "COMMUNITY 65%",
-    content:
-      "Fudders and people that came for a quick buck are starting to leave out of boredom, wholesome community is building",
-    flag: true,
-  },
-  {
-    id: 4,
-    title: "PRODUCT DEVELOPMENT 40%",
-    content:
-      "We are working on a new website, talking with a dev to bring a dApp and NFT shop",
-    flag: false,
-  },
-  {
-    id: 5,
-    title: "FURTHER EXPOSURE",
-    content: "We are preparing soon for a second marketing push",
-    flag: false,
-  },
-  {
-    id: 6,
-    title: "PARTNERSHIPS 30%",
-    content:
-      "We are in the talks with 2 big projects to collaborate with, this will boost us even more than cmc and cg listing",
-    flag: false,
-  },
-  {
-    id: 7,
-    title: "TO THE STARS",
-    content: "Much more to come!",
-    flag: false,
   },
 ];
 

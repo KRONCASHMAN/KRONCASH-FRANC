@@ -189,6 +189,7 @@
       .button-section {
         display: none;
         background-color: inherit;
+        color: #3432c7 !important;
 
         @media (max-width: 992px) {
           display: block;
@@ -206,10 +207,10 @@
             transition-property: all;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 0.15s;
-            color: rgb(255 255 255/1);
+            color: #3432c7 !important;
             box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
               0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            background-color: rgb(118 66 218);
+            background-color: #cceaf5;
             border-radius: 0.5rem;
             overflow: hidden;
             width: 8rem;
@@ -250,6 +251,7 @@
     .button-section {
       display: block;
       background-color: inherit;
+      color: #3432c7 !important;
 
       @media (max-width: 992px) {
         display: none;
@@ -263,10 +265,10 @@
           transition-property: all;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-duration: 0.15s;
-          color: rgb(255 255 255/1);
+          color: #3432c7 !important;
           box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
             0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          background-color: rgb(118 66 218);
+          background-color: #cceaf5;
           border-radius: 0.5rem;
           overflow: hidden;
           width: 8rem;
@@ -292,6 +294,7 @@
 
           .btn-span {
             position: relative;
+            color: #3432c7;
             z-index: 10;
             background-color: inherit;
           }

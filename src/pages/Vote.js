@@ -11,6 +11,7 @@ import baron_img from "../assets/KRONCASH/Baron.png";
 import viscount_img from "../assets/KRONCASH/viscount.png";
 import marques_img from "../assets/KRONCASH/marques.png";
 import duke_img from "../assets/KRONCASH/duke.png";
+import VoteCard from "./home_data/Votepage_card";
 import "./Vote.scss";
 
 const Vote = () => {
@@ -98,10 +99,10 @@ const Vote = () => {
         <div className="cards">
           <div class="card">
             <div class="image">
-              <img src={main_img_1} />
+              <img src={main_img_3} />
             </div>
             <div class="content">
-              <h3>Inflation Hedge</h3>
+              <h3>100% percent return for KCF guaranteed</h3>
               <p>
                 KronCash aims to portect French businesses and investors from
                 the adverse effects of inflation, thus ensuring long-term
@@ -114,7 +115,7 @@ const Vote = () => {
               <img src={main_img_2} />
             </div>
             <div class="content">
-              <h3>Decentralized Finance(DeFi) Integation</h3>
+              <h3>Frebch Business Partnership integration</h3>
               <p>
                 To integrate French businesses seamlessly into the burgeoning
                 DeFi ecosystem, enhancing their fincial operations through
@@ -124,10 +125,10 @@ const Vote = () => {
           </div>
           <div class="card">
             <div class="image">
-              <img src={main_img_3} />
+              <img src={main_img_1} />
             </div>
             <div class="content">
-              <h3>Public Participation in Monetary Policy</h3>
+              <h3>French Climate Initiative public good</h3>
               <p>
                 Empowering stakeholders by democratizing financial policy
                 decisions typically controlled by central institutions.
@@ -135,7 +136,7 @@ const Vote = () => {
             </div>
           </div>
         </div>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.kroncash.org"
@@ -143,7 +144,8 @@ const Vote = () => {
           <button class="vote_btn" type="button">
             Subscibe kroncash
           </button>
-        </a>
+        </a> */}
+        <VoteCard />
         <div className="vote_box" style={{ marginTop: "50px" }}>
           <div className="vote_card">
             <div class="card__face card__face--front">
