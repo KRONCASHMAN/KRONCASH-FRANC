@@ -1,10 +1,5 @@
 import React from "react";
 
-// load assets
-import BurnImageUrl from "../../assets/image/tokenomics/burn-1.png.webp";
-import SupplyImageUrl from "../../assets/image/tokenomics/supply-1.png.webp";
-import TaxesImageUrl from "../../assets/image/tokenomics/taxes-1.png.webp";
-import TeamImageUrl from "../../assets/image/tokenomics/team-1.png.webp";
 import "./TokenomicsPage.scss";
 
 const TokenomicsPage = () => {
@@ -23,67 +18,78 @@ const TokenomicsPage = () => {
           </div>
         </div>
         <div className="content">
-          <div className="item">
-            <div className="image">
-              <img
-                className="about-right-img"
-                alt="burn"
-                loading="lazy"
-                decoding="async"
-                src={SupplyImageUrl}
-              />
+          <div className="items">
+            <div className="item">
+              <div className="radio-box">
+                <img src="https://shibashootout.com/assets/images/svg-icons/per-amount.svg" />
+                <div className="radio-text">30%</div>
+              </div>
+              <div className="item-text">
+                <div className=""><b>Liquidity Pools</b></div>
+                {/* <div className="">30% of each token to the Liquidity Pools</div> */}
+              </div>
             </div>
-            <div className="description">
-              <h3>Supply</h3>
-              <p>100M KronCash Tokens.</p>
+            <div className="item">
+              <div className="radio-box">
+                <img src="https://shibashootout.com/assets/images/svg-icons/per-amount.svg" />
+                <div className="radio-text">20%</div>
+              </div>
+              <div className="item-text">
+                <div className=""><b>Community for governance and participation</b></div>
+                {/* <div className="">20% of each token to the Community for governance and participation</div> */}
+              </div>
+            </div>
+            <div className="item">
+              <div className="radio-box">
+                <img src="https://shibashootout.com/assets/images/svg-icons/per-amount.svg" />
+                <div className="radio-text">20%</div>
+              </div>
+              <div className="item-text">
+                <div className=""><b>Reserve reserves</b></div>
+                {/* <div className="">20% of each token to the Reserve to ensure stability and backing of the currencies</div> */}
+              </div>
+            </div>
+            <div className="item">
+              <div className="radio-box">
+                <img src="https://shibashootout.com/assets/images/svg-icons/per-amount.svg" />
+                <div className="radio-text">20%</div>
+              </div>
+              <div className="item-text">
+                <div className=""><b>Developer/Team Wallet for project</b></div> 
+                {/* <div className="">20% of each token to the Developer/Team Wallet for project development, marketing, and operations</div> */}
+              </div>
+            </div>
+            <div className="item">
+              <div className="radio-box">
+                <img src="https://shibashootout.com/assets/images/svg-icons/per-amount.svg" />
+                <div className="radio-text">10%</div>
+              </div>
+              <div className="item-text">
+                <div><b>Vesting Schedule</b></div>
+                {/* <div>10% of each token held in a Vesting Schedule for the Developer/Team to align incentives and build long-term trust</div> */}
+              </div>
             </div>
           </div>
-          <div className="item">
-            <div className="image">
-              <img
-                className="about-right-img"
-                alt="burn"
-                loading="lazy"
-                decoding="async"
-                src={BurnImageUrl}
-              />
+          <div className="content-text">
+            <div className="radio-content">
+              <div className="radio-title">Liquidity Pools</div>
+              <div className="radio-title-text">30% of each token to the Liquidity Pools.</div>
+              <br />
+              <div className="radio-title">Community for governance and participation</div>
+              <div className="radio-title-text">20% of each token to the Community for governance and participation.</div>
+              <br />
+              <div className="radio-title">Reserve reserves</div>
+              <div className="radio-title-text">20% of each token to the Reserve to ensure stability and backing of the currencies.</div>
+              <br />
             </div>
-            <div className="description">
-              <h3>Burn</h3>
-              <p>We have completed an initial burn of 4M tokens.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="image">
-              <img
-                className="about-right-img"
-                alt="burn"
-                loading="lazy"
-                decoding="async"
-                src={TaxesImageUrl}
-              />
-            </div>
-            <div className="description">
-              <h3>Taxes</h3>
-              <p>
-                10% tax on all transactions with a redistribution of 5% to all
-                holders and 5% towards liquidity.
-              </p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="image">
-              <img
-                className="about-right-img"
-                alt="burn"
-                loading="lazy"
-                decoding="async"
-                src={TeamImageUrl}
-              />
-            </div>
-            <div className="description">
-              <h3>Team</h3>
-              <p>3% allocated to development</p>
+            <div className="radio-content">
+              
+            <div className="radio-title">Developer/Team Wallet for project</div>
+              <div className="radio-title-text">20% of each token to the Developer/Team Wallet for project development, marketing, and operations.</div>
+              <br />
+              <div className="radio-title">Vesting Schedule</div>
+              <div className="radio-title-text">10% of each token held in a Vesting Schedule for the Developer/Team to align incentives and build long-term trust.</div>
+              <br />
             </div>
           </div>
         </div>
