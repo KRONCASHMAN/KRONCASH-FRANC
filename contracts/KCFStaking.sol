@@ -169,7 +169,7 @@ abstract contract Pausable is Context {
     }
 }
 
-contract KFStaking is Ownable, Pausable, ReentrancyGuard {
+contract KCFStaking is Ownable, Pausable, ReentrancyGuard {
     using SafeMath for uint256;
 
     IERC20 public kfToken;

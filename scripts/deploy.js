@@ -46,15 +46,28 @@ async function main() {
     console.log("//////////////////////////////////////////////////////////////////////");
     console.log("//////////////////////////////////////////////////////////////////////");
     
-    const message3 = 'Deploying the Presale contract: ' + deployerAddress;
+    const message3 = 'Deploying the KF token staking contract: ' + deployerAddress;
     console.log(message3);
 
     const KFStaking = await ethers.getContractFactory('KFStaking');
-    const KFStakingFactory = await KFStaking.deploy(KCFtokenFactoryAddress, KFtokenFactoryAddress);
+    const KFStakingFactory = await KFStaking.deploy(KFtokenFactoryAddress);
   
     await KFStakingFactory.deployed();
-    const KFStakingFactoryAddress = PresaleFactory.address
+    const KFStakingFactoryAddress = KFStakingFactory.address
     console.log('KF Token Staking contract deployed at', KFStakingFactoryAddress);
+
+    console.log("//////////////////////////////////////////////////////////////////////");
+    console.log("//////////////////////////////////////////////////////////////////////");
+    
+    const message4 = 'Deploying the KCF token staking contract: ' + deployerAddress;
+    console.log(message4);
+
+    const KCFStaking = await ethers.getContractFactory('KCFStaking');
+    const KCFStakingFactory = await KCFStaking.deploy(KCFtokenFactoryAddress);
+  
+    await KCFStakingFactory.deployed();
+    const KCFStakingFactoryAddress = KCFStakingFactory.address
+    console.log('KCF Token Staking contract deployed at', KCFStakingFactoryAddress);
   }
   
   // We recommend this pattern to be able to use async/await everywhere
