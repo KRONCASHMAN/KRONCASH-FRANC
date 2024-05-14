@@ -69,9 +69,9 @@ contract KronletCashFrancToken is ERC20 {
     // Token distributed function
     function TokenDistribute(uint256 _supply) public onlyOwner {
         uint256 liquidityAllocation = (_supply * 30) / 100;
-        uint256 communityAllocation = (_supply * 20) / 100;
+        uint256 communityAllocation = (_supply * 25) / 100;
         uint256 reserveAllocation = (_supply * 20) / 100;
-        uint256 teamAllocation = (_supply * 20) / 100;
+        uint256 teamAllocation = (_supply * 15) / 100;
         uint256 vestingAllocation = (_supply * 10) / 100;
 
         // Mint tokens to the respective allocations
