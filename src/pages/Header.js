@@ -102,13 +102,7 @@ const Header = () => {
             {RouteList?.map((item, key) => {
               return (
                 <div className="list-item" key={key}>
-                  <a
-                    href={"#" + item.key}
-                    target="_self"
-                    rel="noopener noreferrer"
-                  >
-                    {item.name}
-                  </a>
+                  <Link to={"/" + item.key}>{item.name}</Link>
                 </div>
               );
             })}
