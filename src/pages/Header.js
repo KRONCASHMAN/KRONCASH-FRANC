@@ -36,11 +36,6 @@ const RouteList = [
     name: "Contact Us",
     key: "contact",
   },
-  {
-    id: 6,
-    name: "Luanch Presale",
-    key: "Luanch Presale",
-  },
 ];
 
 const Header = () => {
@@ -100,6 +95,9 @@ const Header = () => {
               </div>
             );
           })}
+          <div className="list-item">
+            <a target="_blank" href="https://presale-dun.vercel.app/">Launch Presale</a>
+          </div>
         </div>
 
         {menuFlag && (
@@ -111,6 +109,9 @@ const Header = () => {
                 </div>
               );
             })}
+            <div className="list-item">
+              <a target="_blank" href="https://presale-dun.vercel.app/">Launch Presale</a>
+            </div>
 
             <div className="button-section">
               <a
