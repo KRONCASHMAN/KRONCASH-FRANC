@@ -26,15 +26,20 @@ const RouteList = [
     key: "vote",
     img: voting,
   },
-  {
-    id: 4,
-    name: "Documentation",
-    key: "doc",
-  },
+  // {
+  //   id: 4,
+  //   name: "Documentation",
+  //   key: "doc",
+  // },
   {
     id: 5,
     name: "Contact Us",
     key: "contact",
+  },
+  {
+    id: 6,
+    name: "Luanch Presale",
+    key: "Luanch Presale",
   },
 ];
 
