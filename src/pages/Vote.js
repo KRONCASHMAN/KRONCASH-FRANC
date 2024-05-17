@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
-import table_icon_kroncash from "../assets/image/kcf-logo.png";
-import table_icon_kronlet from "../assets/image/kronlet.jpg";
+import table_icon_kroncash from "../assets/KRONCASH/KCF.png";
+import table_icon_kronlet from "../assets/image/name-logo.png";
 import table_icon_ETH from "../assets/image/eth.png";
 import table_icon_rocket from "../assets/image/blockchain/16.svg";
 import main_img_1 from "../assets/KRONCASH/22.png";
