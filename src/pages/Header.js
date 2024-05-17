@@ -47,11 +47,11 @@ const Header = () => {
     const node = document.createElement("link");
     node.setAttribute("rel", "stylesheet");
     if (themeFlag === "dark") {
-      node.setAttribute("href", "./theme/dark.css");
+      node.setAttribute("href", "./theme/light.css");
       setThemeFlag("light");
       localStorage.setItem("themeMode", "light");
     } else {
-      node.setAttribute("href", "./theme/light.css");
+      node.setAttribute("href", "./theme/dark.css");
       setThemeFlag("dark");
       localStorage.setItem("themeMode", "dark");
     }
