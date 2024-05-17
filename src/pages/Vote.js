@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useAccount } from "wagmi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./Footer";
 import table_icon_kroncash from "../assets/KRONCASH/KCF.png";
 import table_icon_kronlet from "../assets/image/name-logo.png";
@@ -15,6 +18,9 @@ import VoteCard from "./home_data/Votepage_card";
 import "./Vote.scss";
 
 const Vote = () => {
+
+  const { address } = useAccount();
+
   const [faqFlags, setFaqFlags] = useState([
     {
       id: 1,
@@ -90,53 +96,116 @@ const Vote = () => {
       setFaqFlags(tempFaqFlags);
     }
   };
+
+  const Baron_handleVote = () => {
+    if (address == undefined) {
+      toast.warn('Connect Wallet!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
+  const Viscount_handleVote = () => {
+    if (address == undefined) {
+      toast.warn('Connect Wallet!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
+  const Marquesss_handleVote = () => {
+    if (address == undefined) {
+      toast.warn('Connect Wallet!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
+  const Duke_handleVote = () => {
+    if (address == undefined) {
+      toast.warn('Connect Wallet!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
   return (
-    <div className="main-background">
-      <div className="container">
-        <div className="banner">
-          Reserve Financing through Strategic Revenue Allocation
-        </div>
-        <div className="cards">
-          <div class="card">
-            <div class="image">
-              <img src={main_img_3} />
+    <>
+      <ToastContainer />
+      <div className="main-background">
+        <div className="container">
+          <div className="banner">
+            Reserve Financing through Strategic Revenue Allocation
+          </div>
+          <div className="cards">
+            <div class="card">
+              <div class="image">
+                <img src={main_img_3} alt="" />
+              </div>
+              <div class="content">
+                <h3>100% percent return for KCF guaranteed</h3>
+                <p>
+                  KronCash aims to portect French businesses and investors from
+                  the adverse effects of inflation, thus ensuring long-term
+                  economic stability and growth.
+                </p>
+              </div>
             </div>
-            <div class="content">
-              <h3>100% percent return for KCF guaranteed</h3>
-              <p>
-                KronCash aims to portect French businesses and investors from
-                the adverse effects of inflation, thus ensuring long-term
-                economic stability and growth.
-              </p>
+            <div class="card">
+              <div class="image">
+                <img src={main_img_2} alt="" />
+              </div>
+              <div class="content">
+                <h3>Frebch Business Partnership integration</h3>
+                <p>
+                  To integrate French businesses seamlessly into the burgeoning
+                  DeFi ecosystem, enhancing their fincial operations through
+                  modern, blockchain-based solutions.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src={main_img_1} alt="" />
+              </div>
+              <div class="content">
+                <h3>French Climate Initiative public good</h3>
+                <p>
+                  Empowering stakeholders by democratizing financial policy
+                  decisions typically controlled by central institutions.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image">
-              <img src={main_img_2} />
-            </div>
-            <div class="content">
-              <h3>Frebch Business Partnership integration</h3>
-              <p>
-                To integrate French businesses seamlessly into the burgeoning
-                DeFi ecosystem, enhancing their fincial operations through
-                modern, blockchain-based solutions.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src={main_img_1} />
-            </div>
-            <div class="content">
-              <h3>French Climate Initiative public good</h3>
-              <p>
-                Empowering stakeholders by democratizing financial policy
-                decisions typically controlled by central institutions.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* <a
+          {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.kroncash.org"
@@ -145,435 +214,456 @@ const Vote = () => {
             Subscibe kroncash
           </button>
         </a> */}
-        <VoteCard />
-        <div className="vote_box" style={{ marginTop: "50px" }}>
-          <div className="vote_card">
-            <div class="card__face card__face--front">
-              <img src={baron_img} />
-            </div>
-            <div class="card__face card__face--back">
-              <div className="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th className="sticky">
-                        <span>Coin</span>
-                      </th>
-                      <th>Name</th>
-                      <th>Chain</th>
-                      <th>Price In ETH</th>
-                      <th>Price In USDT</th>
-                      <th>Launch</th>
-                      <th>Vote Price</th>
-                      <th>Vote</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td className="sticky">
-                        <img
-                          className="kronCash_img"
-                          src={table_icon_kroncash}
-                        />
-                      </td>
-                      <td>Kroncash</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.063 ETH</td>
-                      <td>200 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 200
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td className="sticky">
-                        <img className="kronlet_img" src={table_icon_kronlet} />
-                      </td>
-                      <td>Kronlet</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.063 ETH</td>
-                      <td>200 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 200
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <VoteCard />
+          <div className="vote_box" style={{ marginTop: "50px" }}>
+            <div className="vote_card">
+              <div class="card__face card__face--front">
+                <img src={baron_img} alt="" />
               </div>
-              <button className="flip_btn">Vote X 200</button>
-            </div>
-          </div>
-          <div className="vote_card">
-            <div class="card__face card__face--front">
-              <img src={viscount_img} />
-            </div>
-            <div class="card__face card__face--back">
-              <div className="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th className="sticky">
-                        <span>Coin</span>
-                      </th>
-                      <th>Name</th>
-                      <th>Chain</th>
-                      <th>Price In ETH</th>
-                      <th>Price In USDT</th>
-                      <th>Launch</th>
-                      <th>Vote Price</th>
-                      <th>Vote</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td className="sticky">
-                        <img
-                          className="kronCash_img"
-                          src={table_icon_kroncash}
-                        />
-                      </td>
-                      <td>Kroncash</td>
-                      <td>
-                        <div className="center">
+              <div class="card__face card__face--back">
+                <div className="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th className="sticky">
+                          <span>Coin</span>
+                        </th>
+                        <th>Name</th>
+                        <th>Chain</th>
+                        <th>Price In ETH</th>
+                        <th>Price In USDT</th>
+                        <th>Launch</th>
+                        <th>Vote Price</th>
+                        <th>Vote</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td className="sticky">
                           <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.16 ETH</td>
-                      <td>500 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 500
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td className="sticky">
-                        <img className="kronlet_img" src={table_icon_kronlet} />
-                      </td>
-                      <td>Kronlet</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.16 ETH</td>
-                      <td>500 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 500
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button className="flip_btn">Vote X 500</button>
-            </div>
-          </div>
-        </div>
-        <div className="vote_box">
-          <div className="vote_card">
-            <div class="card__face card__face--front">
-              <img src={marques_img} />
-            </div>
-            <div class="card__face card__face--back">
-              <div className="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th className="sticky">
-                        <span>Coin</span>
-                      </th>
-                      <th>Name</th>
-                      <th>Chain</th>
-                      <th>Price In ETH</th>
-                      <th>Price In USDT</th>
-                      <th>Launch</th>
-                      <th>Vote Price</th>
-                      <th>Vote</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td className="sticky">
-                        <img
-                          className="kronCash_img"
-                          src={table_icon_kroncash}
-                        />
-                      </td>
-                      <td>Kroncash</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.31 ETH</td>
-                      <td>1000 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 1000
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td className="sticky">
-                        <img className="kronlet_img" src={table_icon_kronlet} />
-                      </td>
-                      <td>Kronlet</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>0.31 ETH</td>
-                      <td>1000 USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 1000
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button className="flip_btn">Vote X 1000</button>
-            </div>
-          </div>
-          <div className="vote_card">
-            <div class="card__face card__face--front">
-              <img src={duke_img} />
-            </div>
-            <div class="card__face card__face--back">
-              <div className="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th className="sticky">
-                        <span>Coin</span>
-                      </th>
-                      <th>Name</th>
-                      <th>Chain</th>
-                      <th>Price In ETH</th>
-                      <th>Price In USDT</th>
-                      <th>Launch</th>
-                      <th>Vote Price</th>
-                      <th>Vote</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td className="sticky">
-                        <img
-                          className="kronCash_img"
-                          src={table_icon_kroncash}
-                        />
-                      </td>
-                      <td>Kroncash</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>3.14 ETH</td>
-                      <td>10K USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 10K
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td className="sticky">
-                        <img className="kronlet_img" src={table_icon_kronlet} />
-                      </td>
-                      <td>Kronlet</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_ETH}
-                            style={{ width: "30px", height: "30px" }}
-                          />{" "}
-                          ETH
-                        </div>
-                      </td>
-                      <td>3.14 ETH</td>
-                      <td>10K USDT</td>
-                      <td>In 2 months</td>
-                      <td>
-                        <div className="center">
-                          <img
-                            src={table_icon_rocket}
-                            style={{ width: "22px", height: "22px" }}
-                          />{" "}
-                          X 10K
-                        </div>
-                      </td>
-                      <td>
-                        <button className="vote">Vote</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button className="flip_btn">Vote X 10K</button>
-            </div>
-          </div>
-        </div>
-        <div className="sub-section">
-          <div id="faq" className="title">
-            <h1>VOTING PROTOCAL</h1>
-          </div>
-          <div className="menu">
-            {faqFlags.map((item, key) => {
-              return (
-                <div className="item" key={key}>
-                  <h3 className="content">
-                    <button
-                      type="button"
-                      className="btn"
-                      onClick={() => handleFaqFlag(item)}
-                    >
-                      {item.question}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className={item.flag === 1 ? "rotate" : ""}
-                      >
-                        <path d="m6 9 6 6 6-6"></path>
-                      </svg>
-                    </button>
-                  </h3>
-                  <div
-                    className={
-                      item.flag === 1
-                        ? "description"
-                        : item.flag === 2
-                        ? "description hiddenbefore"
-                        : "description hidden"
-                    }
-                  >
-                    <div className="des-content">{item.answer}</div>
-                  </div>
+                            className="kronCash_img"
+                            src={table_icon_kroncash}
+                            alt=""
+                          />
+                        </td>
+                        <td>Kroncash</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.063 ETH</td>
+                        <td>200 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 200
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td className="sticky">
+                          <img className="kronlet_img" src={table_icon_kronlet} alt="" />
+                        </td>
+                        <td>Kronlet</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.063 ETH</td>
+                        <td>200 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 200
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              );
-            })}
+                <button onClick={() => Baron_handleVote()} className="flip_btn">Vote X 200</button>
+              </div>
+            </div>
+            <div className="vote_card">
+              <div class="card__face card__face--front">
+                <img src={viscount_img} alt="" />
+              </div>
+              <div class="card__face card__face--back">
+                <div className="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th className="sticky">
+                          <span>Coin</span>
+                        </th>
+                        <th>Name</th>
+                        <th>Chain</th>
+                        <th>Price In ETH</th>
+                        <th>Price In USDT</th>
+                        <th>Launch</th>
+                        <th>Vote Price</th>
+                        <th>Vote</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td className="sticky">
+                          <img
+                            className="kronCash_img"
+                            src={table_icon_kroncash}
+                            alt=""
+                          />
+                        </td>
+                        <td>Kroncash</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.16 ETH</td>
+                        <td>500 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 500
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td className="sticky">
+                          <img className="kronlet_img" src={table_icon_kronlet} alt="" />
+                        </td>
+                        <td>Kronlet</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.16 ETH</td>
+                        <td>500 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 500
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button onClick={() => Viscount_handleVote()}  className="flip_btn">Vote X 500</button>
+              </div>
+            </div>
+          </div>
+          <div className="vote_box">
+            <div className="vote_card">
+              <div class="card__face card__face--front">
+                <img src={marques_img} alt="" />
+              </div>
+              <div class="card__face card__face--back">
+                <div className="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th className="sticky">
+                          <span>Coin</span>
+                        </th>
+                        <th>Name</th>
+                        <th>Chain</th>
+                        <th>Price In ETH</th>
+                        <th>Price In USDT</th>
+                        <th>Launch</th>
+                        <th>Vote Price</th>
+                        <th>Vote</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td className="sticky">
+                          <img
+                            className="kronCash_img"
+                            src={table_icon_kroncash}
+                            alt=""
+                          />
+                        </td>
+                        <td>Kroncash</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.31 ETH</td>
+                        <td>1000 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 1000
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td className="sticky">
+                          <img className="kronlet_img" src={table_icon_kronlet} alt="" />
+                        </td>
+                        <td>Kronlet</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>0.31 ETH</td>
+                        <td>1000 USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 1000
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button onClick={() => Marquesss_handleVote()}  className="flip_btn">Vote X 1000</button>
+              </div>
+            </div>
+            <div className="vote_card">
+              <div class="card__face card__face--front">
+                <img src={duke_img} alt="" />
+              </div>
+              <div class="card__face card__face--back">
+                <div className="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th className="sticky">
+                          <span>Coin</span>
+                        </th>
+                        <th>Name</th>
+                        <th>Chain</th>
+                        <th>Price In ETH</th>
+                        <th>Price In USDT</th>
+                        <th>Launch</th>
+                        <th>Vote Price</th>
+                        <th>Vote</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td className="sticky">
+                          <img
+                            className="kronCash_img"
+                            src={table_icon_kroncash}
+                            alt=""
+                          />
+                        </td>
+                        <td>Kroncash</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>3.14 ETH</td>
+                        <td>10K USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 10K
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td className="sticky">
+                          <img className="kronlet_img" src={table_icon_kronlet} alt="" />
+                        </td>
+                        <td>Kronlet</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_ETH}
+                              style={{ width: "30px", height: "30px" }}
+                              alt=""
+                            />{" "}
+                            ETH
+                          </div>
+                        </td>
+                        <td>3.14 ETH</td>
+                        <td>10K USDT</td>
+                        <td>In 2 months</td>
+                        <td>
+                          <div className="center">
+                            <img
+                              src={table_icon_rocket}
+                              style={{ width: "22px", height: "22px" }}
+                              alt=""
+                            />{" "}
+                            X 10K
+                          </div>
+                        </td>
+                        <td>
+                          <button className="vote">Vote</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button onClick={() => Duke_handleVote()}   className="flip_btn">Vote X 10K</button>
+              </div>
+            </div>
+          </div>
+          <div className="sub-section">
+            <div id="faq" className="title">
+              <h1>VOTING PROTOCAL</h1>
+            </div>
+            <div className="menu">
+              {faqFlags.map((item, key) => {
+                return (
+                  <div className="item" key={key}>
+                    <h3 className="content">
+                      <button
+                        type="button"
+                        className="btn"
+                        onClick={() => handleFaqFlag(item)}
+                      >
+                        {item.question}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className={item.flag === 1 ? "rotate" : ""}
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </button>
+                    </h3>
+                    <div
+                      className={
+                        item.flag === 1
+                          ? "description"
+                          : item.flag === 2
+                            ? "description hiddenbefore"
+                            : "description hidden"
+                      }
+                    >
+                      <div className="des-content">{item.answer}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
