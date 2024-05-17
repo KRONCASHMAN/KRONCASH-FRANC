@@ -6,8 +6,40 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import logoImageUrl from "../assets/image/name-logo.png";
 import menuSquareUrl from "../assets/image/menu-square.png";
 import voting from "../assets/KRONCASH/voting.gif";
-
 import "./Header.scss";
+
+// wallet modal
+import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
+import { createWeb3Modal } from "@web3modal/wagmi/react";
+import { arbitrum, mainnet } from "wagmi/chains";
+
+const projectId = "760f8d127d7a9b7c0dbb7dfc6ee6d1ca";
+if (!projectId) {
+  throw new Error("VITE_PROJECT_ID is not set");
+}
+
+// 2. Create wagmiConfig
+const wagmiConfig = defaultWagmiConfig({
+  chains: [mainnet, arbitrum],
+  projectId,
+  metadata: {
+    name: "Web3Modal React Example",
+    description: "Web3Modal React Example",
+    url: "",
+    icons: [],
+  },
+});
+
+// 3. Create modal
+createWeb3Modal({
+  wagmiConfig,
+  projectId,
+  themeMode: "light",
+  themeVariables: {
+    "--w3m-color-mix": "#00DCFF",
+    "--w3m-color-mix-strength": 20,
+  },
+});
 
 const RouteList = [
   {
@@ -134,6 +166,9 @@ const Header = () => {
                   <span className="btn-span">BUY KCF Token</span>
                 </button>
               </a>
+              <div className="connetWallet">
+                <w3m-button />
+              </div>
             </div>
           </div>
         )}
@@ -173,6 +208,7 @@ const Header = () => {
               <span className="btn-span">BUY KCF Token</span>
             </button>
           </a>
+          <w3m-button />
         </div>
         <div className="drop-menu">
           <button className="btn drop-btn" onClick={handleShowMenu}>

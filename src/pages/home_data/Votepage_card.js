@@ -1,7 +1,7 @@
 import React from "react";
 
 // load assets
-import BadgeUrl from "../../assets/KRONCASH/New Project (17).png";
+import BadgeUrl from "../../assets/KRONCASH/32.jpg";
 import "./votecard.scss";
 
 const VoteCard = () => {
