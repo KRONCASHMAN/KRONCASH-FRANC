@@ -9,11 +9,13 @@ import table_icon_ETH from "../assets/image/eth.png";
 import table_icon_rocket from "../assets/image/blockchain/16.svg";
 import main_img_1 from "../assets/KRONCASH/22.png";
 import main_img_2 from "../assets/KRONCASH/23.png";
-import main_img_3 from "../assets/KRONCASH/24.png";
-import baron_img from "../assets/KRONCASH/Baron.png";
-import viscount_img from "../assets/KRONCASH/viscount.png";
-import marques_img from "../assets/KRONCASH/marques.png";
-import duke_img from "../assets/KRONCASH/duke.png";
+import main_img_3 from "../assets/KRONCASH/Bitmap.png";
+import main_img_4 from "../assets/KRONCASH/BonusCharactor.png";
+import baron_img from "../assets/KRONCASH/BaronPro.png";
+import viscount_img from "../assets/KRONCASH/ViscountPro.png";
+import marques_img from "../assets/KRONCASH/MarquessPro.png";
+import duke_img from "../assets/KRONCASH/DukePro.png";
+import Princess_img from "../assets/KRONCASH/PrincessPro.png";
 import VoteCard from "./home_data/Votepage_card";
 import "./Vote.scss";
 
@@ -171,11 +173,9 @@ const Vote = () => {
                 <img src={main_img_3} alt="" />
               </div>
               <div class="content">
-                <h3>100% percent return for KCF guaranteed</h3>
+                <h3>MicroEconomy of France</h3>
                 <p>
-                  KronCash aims to portect French businesses and investors from
-                  the adverse effects of inflation, thus ensuring long-term
-                  economic stability and growth.
+                  KronCash aims to use French exchange themes from history to support an ecosystem of money and luxury.
                 </p>
               </div>
             </div>
@@ -199,8 +199,18 @@ const Vote = () => {
               <div class="content">
                 <h3>French Climate Initiative public good</h3>
                 <p>
-                  Empowering stakeholders by democratizing financial policy
-                  decisions typically controlled by central institutions.
+                  Our governance board DAAE uses democratic allocation of resources that promote french related causes to strengthen our french themed token and generate extremely high returns and bonuses for our members.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src={main_img_4} alt="" />
+              </div>
+              <div class="content">
+                <h3>Bonuses System</h3>
+                <p>
+                  Finance the Reserve through our crypto nobility rental program. Get bonuses and characters that support the ecosystem whilst promoting the elegant themes of France and its wealth.
                 </p>
               </div>
             </div>
@@ -411,7 +421,7 @@ const Vote = () => {
                     </tbody>
                   </table>
                 </div>
-                <button onClick={() => Viscount_handleVote()}  className="flip_btn">Vote X 500</button>
+                <button onClick={() => Viscount_handleVote()} className="flip_btn">Vote X 500</button>
               </div>
             </div>
           </div>
@@ -512,7 +522,7 @@ const Vote = () => {
                     </tbody>
                   </table>
                 </div>
-                <button onClick={() => Marquesss_handleVote()}  className="flip_btn">Vote X 1000</button>
+                <button onClick={() => Marquesss_handleVote()} className="flip_btn">Vote X 1000</button>
               </div>
             </div>
             <div className="vote_card">
@@ -611,7 +621,18 @@ const Vote = () => {
                     </tbody>
                   </table>
                 </div>
-                <button onClick={() => Duke_handleVote()}   className="flip_btn">Vote X 10K</button>
+                <button onClick={() => Duke_handleVote()} className="flip_btn">Vote X 10K</button>
+              </div>
+            </div>
+          </div>
+          <div className="vote_box" style={{justifyContent: "center"}}>
+            <div className="vote_card">
+              <div class="card__face card__face--front">
+                <img src={Princess_img} alt="" />
+              </div>
+              <div class="card__face card__face--back">
+                <div>To maintain your nobility title and authority within the Kroncash ecosystem's DAAE treasury, you must form an alliance with a Crypto Princess. Pair your NFT with a Crypto Princess after six months to preserve your power and status.</div>
+                <button onClick={() => Marquesss_handleVote()} className="flip_btn">Vote</button>
               </div>
             </div>
           </div>
