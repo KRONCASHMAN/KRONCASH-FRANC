@@ -225,6 +225,7 @@ const Vote = () => {
           </button>
         </a> */}
           <VoteCard />
+          <div className="vot_title">Aristocracy Titles</div>
           <div className="vote_box" style={{ marginTop: "50px" }}>
             <div className="vote_card">
               <div class="card__face card__face--front">
