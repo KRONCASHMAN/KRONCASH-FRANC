@@ -197,7 +197,7 @@ const Vote = () => {
                 <img src={main_img_1} alt="" />
               </div>
               <div class="content">
-                <h3>Democratic Governance</h3>
+                <h3>Democratic Allocation</h3>
                 <p>
                   Our governance board DAAE uses democratic allocation of resources that promote french related causes to strengthen our french themed token and generate extremely high returns and bonuses for our members.
                 </p>
