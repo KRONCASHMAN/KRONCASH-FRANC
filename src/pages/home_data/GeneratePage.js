@@ -3,7 +3,7 @@ import React from "react";
 // load assets
 import LogoUrl from "../../assets/image/name-logo.png";
 import CloudverseUrl from "../../assets/KRONCASH/coat.png";
-import CloudsecUrl from "../../assets/KRONCASH/KronCash.png";
+import CloudsecUrl from "../../assets/image/name-logo.png";
 import CloudnetworkUrl from "../../assets/KRONCASH/KCF.png";
 import "./GeneratePage.scss";
 
