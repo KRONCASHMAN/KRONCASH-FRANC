@@ -25,7 +25,7 @@ const Dao = () => {
           <div className="NFT_detail">
             The glorious Baron collection. 3,000 exist, with a tonne of value and utility packed inside, most notably in the 10 KCF tokens each Baron NFT yields per day, everyday.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={ViscountNFT} alt="Baron" />
@@ -36,7 +36,7 @@ const Dao = () => {
           <div className="NFT_detail">
             The glorious Viscount collection. 1,500 exist, with a tonne of value and utility packed inside, most notably in the 50 KCF tokens each Viscount NFT yields per day, everyday.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={MarqueeNFT} alt="Baron" />
@@ -47,7 +47,7 @@ const Dao = () => {
           <div className="NFT_detail">
             The glorious Marquee collection. 750 exist, with a tonne of value and utility packed inside, most notably in the 100 KCF tokens each Marquee NFT yields per day, everyday.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={DukeNFT} alt="Baron" />
@@ -58,7 +58,7 @@ const Dao = () => {
           <div className="NFT_detail">
             The glorious Duke collection. 300 exist, with a tonne of value and utility packed inside, most notably in the 200 KCF tokens each Duke NFT yields per day, everyday.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
       </div>
       <div className="NFT_group">
@@ -71,9 +71,9 @@ const Dao = () => {
           <div className="NFT_detail">
             Here is amazing story!
             <br />
-            If you want to read more about Princess Vivienne of Bordeaux, please click the View More button.
+            If you want to read more about Princess Vivienne of Bordeaux, please click the View More & Vote Now button.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={MargottNFT} alt="Baron" />
@@ -84,10 +84,9 @@ const Dao = () => {
           <div className="NFT_detail">
             Here is amazing story!
             <br />
-            <br />
-            If you want to read more about Princess Margott, please click the View More button.
+            If you want to read more about Princess Margott, please click the View More & Vote Now button.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={MediciNFT} alt="Baron" />
@@ -98,9 +97,9 @@ const Dao = () => {
           <div className="NFT_detail">
             Here is amazing story!
             <br />
-            If you want to read more about Princess Catherine Medici, please click the View More button.
+            If you want to read more about Princess Catherine Medici, please click the View More & Vote Now button.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={IsoldeNFT} alt="Baron" />
@@ -112,9 +111,9 @@ const Dao = () => {
             Here is amazing story!
             <br />
             <br />
-            If you want to read more about Princess Isolde, please click the View More button.
+            If you want to read more about Princess Isolde, please click the View More & Vote Now button.
           </div>
-          <button className="NFT_rent_btn">View More</button>
+          <button className="NFT_rent_btn">View More & Vote Now</button>
         </div>
       </div>
     </div>
