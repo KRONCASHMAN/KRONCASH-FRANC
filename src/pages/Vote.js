@@ -184,7 +184,7 @@ const Vote = () => {
                 <img src={main_img_2} alt="" />
               </div>
               <div class="content">
-                <h3>Frebch Business Partnership integration</h3>
+                <h3>French It Has A Typo</h3>
                 <p>
                   To integrate French businesses seamlessly into the burgeoning
                   DeFi ecosystem, enhancing their fincial operations through
