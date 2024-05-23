@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import { useAccount } from "wagmi";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from "./Footer";
 import table_icon_kroncash from "../assets/KRONCASH/KCF.png";
 import table_icon_kronlet from "../assets/image/name-logo.png";
 import table_icon_ETH from "../assets/image/eth.png";
@@ -20,8 +18,6 @@ import VoteCard from "./home_data/Votepage_card";
 import "./Vote.scss";
 
 const Vote = () => {
-
-  const { address } = useAccount();
 
   const [faqFlags, setFaqFlags] = useState([
     {
@@ -53,6 +49,8 @@ const Vote = () => {
         "Returns from investments made using reserve assets are reinvested back into the reserve. This compounding effect not only grows the reserve size over time but also aligns with the principle of sustainable financial management.",
     },
   ]);
+
+  const [account, setAccounts] = useState("");
 
   const handleFaqFlag = (item) => {
     const tempFaqFlags = faqFlags.filter((filterItem) => {
@@ -100,7 +98,7 @@ const Vote = () => {
   };
 
   const Baron_handleVote = () => {
-    if (address == undefined) {
+    if (account == undefined) {
       toast.warn('Connect Wallet!', {
         position: "top-right",
         autoClose: 5000,
@@ -114,8 +112,28 @@ const Vote = () => {
     }
   };
 
+  useEffect(() => {
+    // wallet connection part
+    if (window.ethereum) {
+      window.ethereum
+        .request({
+          method: "eth_requestAccounts",
+        })
+        .then((accounts) => {
+          setAccounts(accounts[0]);
+        })
+        .catch((error) => {
+          alert(`Something went wrong: ${error}`);
+          window.location.href = "/";
+        });
+    } else {
+      alert("Please install Metamask wallet!");
+      window.location.href = "/";
+    }
+  }, []);
+
   const Viscount_handleVote = () => {
-    if (address == undefined) {
+    if (account == undefined) {
       toast.warn('Connect Wallet!', {
         position: "top-right",
         autoClose: 5000,
@@ -130,7 +148,7 @@ const Vote = () => {
   };
 
   const Marquesss_handleVote = () => {
-    if (address == undefined) {
+    if (account == undefined) {
       toast.warn('Connect Wallet!', {
         position: "top-right",
         autoClose: 5000,
@@ -145,7 +163,7 @@ const Vote = () => {
   };
 
   const Duke_handleVote = () => {
-    if (address == undefined) {
+    if (account == undefined) {
       toast.warn('Connect Wallet!', {
         position: "top-right",
         autoClose: 5000,
@@ -225,7 +243,7 @@ const Vote = () => {
           </button>
         </a> */}
           <VoteCard />
-          <div className="vot_title">Aristocracy Titles</div>
+          <h1 className="vot_title">Aristocracy Titles</h1>
           <div className="vote_box" style={{ marginTop: "50px" }}>
             <div className="vote_card">
               <div class="card__face card__face--front">
@@ -626,7 +644,7 @@ const Vote = () => {
               </div>
             </div>
           </div>
-          <div className="vote_box" style={{justifyContent: "center"}}>
+          <div className="vote_box" style={{ justifyContent: "center" }}>
             <div className="vote_card">
               <div class="card__face card__face--front">
                 <img src={Princess_img} alt="" />
@@ -683,7 +701,6 @@ const Vote = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

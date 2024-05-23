@@ -12,7 +12,6 @@ import DetailSixthPage from "./home_data/DetailSixthPage";
 import TokenomicsPage from "./home_data/TokenomicsPage";
 import FaqPage from "./home_data/FaqPage";
 import RoadmapPage from "./home_data/RoadmapPage";
-import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -29,7 +28,6 @@ const Home = () => {
       <TokenomicsPage />
       <FaqPage />
       <RoadmapPage />
-      <Footer />
     </div>
   );
 };

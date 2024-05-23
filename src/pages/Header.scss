@@ -81,6 +81,7 @@
     .right-theme {
       background-color: #474d57 !important;
     }
+
     .logo {
       background-color: inherit;
 
@@ -194,13 +195,57 @@
         @media (max-width: 992px) {
           display: block;
         }
+
         .connetWallet {
           display: flex;
           width: 100%;
           margin-top: 10px;
           justify-content: center;
+
+          .btn {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 0.15s;
+            color: #3432c7 !important;
+            box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+              0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background-color: #cceaf5;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            width: 8rem;
+            height: 2.5rem;
+            position: relative;
+            cursor: pointer;
+            background-image: none;
+            text-transform: none;
+            outline: none;
+            border: 0px solid #e5e7eb;
+            transition: 0.2s all ease-in-out;
+
+            &:hover {
+              background-color: rgb(80 110 155);
+            }
+
+            &::before {
+              transition-duration: 0.3s;
+              content: "";
+              animation-duration: 0.3s;
+              background-color: rgb(80 110 155);
+            }
+
+            @media (max-width: 992px) {
+              width: 100%;
+            }
+
+            .btn-span {
+              color: blue !important;
+              position: relative;
+              z-index: 10;
+              background-color: inherit;
+            }
+          }
         }
-        
+
         a {
           color: inherit;
           text-decoration: inherit;
@@ -256,6 +301,9 @@
 
     .button-section {
       display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
       background-color: inherit;
       color: #3432c7 !important;
 

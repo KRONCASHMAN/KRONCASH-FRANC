@@ -1,0 +1,91 @@
+.main-background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .dao_title {
+        font-size: 32px;
+        font-weight: 800;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .NFT_group {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        .NFT_Container {
+            padding: 50px;
+            height: 750px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid yellow;
+            border-radius: 10px;
+
+            @media (max-width: 390px) {
+                padding: 0px;
+            }
+            
+            .summary_img {
+                width: 350px;
+                border-radius: 10px;
+            }
+
+            .NFT_Price_detail {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .NFT_title {
+                    font-family: fantasy;
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: white !important;
+                }
+
+                .NFT_price {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: white !important;
+                }
+            }
+
+            .NFT_detail {
+                margin-top: 40px;
+                width: 350px;
+                font-family: inherit;
+                font-size: 22px;
+                font-weight: 400;
+                color: white !important;
+            }
+
+            .NFT_rent_btn {
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: 800;
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 20px;
+                color: white !important;
+                background-color: green !important;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white !important;
+                    color: green !important;
+                }
+            }
+
+        }
+    }
+}

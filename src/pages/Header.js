@@ -21,15 +21,16 @@ const RouteList = [
   },
   {
     id: 3,
-    name: "Finance The Reseve",
+    name: "Finance The Reserve",
     key: "vote",
     img: voting,
   },
-  // {
-  //   id: 4,
-  //   name: "Documentation",
-  //   key: "doc",
-  // },
+  {
+    id: 4,
+    name: "DAO Protocol",
+    key: "dao",
+    img: voting,
+  },
   {
     id: 5,
     name: "Contact Us",
@@ -62,6 +63,28 @@ const Header = () => {
   const handleShowMenu = () => {
     setMenuFlag(!menuFlag);
   };
+
+  const [account, setAccounts] = useState("");
+
+  const handleConnect = () => {
+    // wallet connection part
+    if (window.ethereum) {
+      window.ethereum
+        .request({
+          method: "eth_requestAccounts",
+        })
+        .then((accounts) => {
+          setAccounts(accounts[0]);
+        })
+        .catch((error) => {
+          alert(`Something went wrong: ${error}`);
+          window.location.href = "/";
+        });
+    } else {
+      alert("Please install Metamask wallet!");
+      window.location.href = "/";
+    }
+  }
 
   return (
     <div className="header-section">
@@ -135,7 +158,8 @@ const Header = () => {
                 </button>
               </a>
               <div className="connetWallet">
-                <w3m-button />
+                {account ? (<button className="btn btn-link" onClick={() => window.location.reload()}>
+                  <span className="btn-span">{account.substring(0, 6)}...{account.substring(38, 42)} Disconnect</span></button>) : (<button className="btn  btn-link" onClick={() => handleConnect()}><span className="btn-span">Connect</span></button>)}
               </div>
             </div>
           </div>
@@ -176,7 +200,10 @@ const Header = () => {
               <span className="btn-span">BUY KCF Token</span>
             </button>
           </a>
-          <w3m-button />
+          <a rel="noopener noreferrer">
+            {account ? (<button className="btn btn-link" onClick={() => window.location.reload()}>
+              <span className="btn-span">{account.substring(0, 6)}...{account.substring(38, 42)} Disconnect</span></button>) : (<button className="btn btn-link" onClick={() => handleConnect()}><span className="btn-span">Connect</span></button>)}
+          </a>
         </div>
         <div className="drop-menu">
           <button className="btn drop-btn" onClick={handleShowMenu}>
