@@ -1,0 +1,26 @@
+.Content {
+  border-radius: 20px;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--doc);
+  align-items: center;
+}
+
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 165px;
+}
+
+.Title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "ABeeZee";
+  color: var(--doc-text);
+}

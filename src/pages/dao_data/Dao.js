@@ -1,50 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./Dao.scss";
 // load nft assets
-import BaronNFT from "../assets/KRONCASH/BaronPro.png";
-import ViscountNFT from "../assets/KRONCASH/ViscountPro.png";
-import MarqueeNFT from "../assets/KRONCASH/MarquessPro.png";
-import DukeNFT from "../assets/KRONCASH/DukePro.png";
-import VivienneNFT from "../assets/KRONCASH/Dao/Vivienne/vivienne1.png"
-import MargottNFT from "../assets/KRONCASH/Dao/Margott/Margott1.png";
-import MediciNFT from "../assets/KRONCASH/Dao/Medici/Medici1.png";
-import IsoldeNFT from "../assets/KRONCASH/Dao/Isolde/Isolde.png";
+import BaronNFT from "../../assets/KRONCASH/BaronPro.png";
+import ViscountNFT from "../../assets/KRONCASH/ViscountPro.png";
+import MarqueeNFT from "../../assets/KRONCASH/MarquessPro.png";
+import DukeNFT from "../../assets/KRONCASH/DukePro.png";
+import VivienneNFT from "../../assets/KRONCASH/Dao/Vivienne/vivienne1.png"
+import MargottNFT from "../../assets/KRONCASH/Dao/Margott/Margott1.png";
+import MediciNFT from "../../assets/KRONCASH/Dao/Medici/Medici1.png";
+import IsoldeNFT from "../../assets/KRONCASH/Dao/Isolde/Isolde.png";
 
 // Vivienne Assets
-import VivienneNFT1 from "../assets/KRONCASH/Dao/Vivienne/vivienne1.png";
-import VivienneNFT2 from "../assets/KRONCASH/Dao/Vivienne/vivienne2.png";
-import VivienneNFT3 from "../assets/KRONCASH/Dao/Vivienne/vivienne3.png";
-import VivienneNFT4 from "../assets/KRONCASH/Dao/Vivienne/vivienne4.png";
+import VivienneNFT1 from "../../assets/KRONCASH/Dao/Vivienne/vivienne1.png";
+import VivienneNFT2 from "../../assets/KRONCASH/Dao/Vivienne/vivienne2.png";
+import VivienneNFT3 from "../../assets/KRONCASH/Dao/Vivienne/vivienne3.png";
+import VivienneNFT4 from "../../assets/KRONCASH/Dao/Vivienne/vivienne4.png";
 
 // Medici Assets
-import MediciNFT1 from "../assets/KRONCASH/Dao/Medici/Medici1.png";
-import MediciNFT2 from "../assets/KRONCASH/Dao/Medici/Medici2.png";
-import MediciNFT3 from "../assets/KRONCASH/Dao/Medici/Medici3.png";
+import MediciNFT1 from "../../assets/KRONCASH/Dao/Medici/Medici1.png";
+import MediciNFT2 from "../../assets/KRONCASH/Dao/Medici/Medici2.png";
+import MediciNFT3 from "../../assets/KRONCASH/Dao/Medici/Medici3.png";
 
 // Baron Assets
-import BaronNFT1 from "../assets/KRONCASH/Dao/Baron/Baron1.png";
-import BaronNFT2 from "../assets/KRONCASH/Dao/Baron/Baron2.png";
-import BaronNFT3 from "../assets/KRONCASH/Dao/Baron/Baron3.png";
-import BaronNFT4 from "../assets/KRONCASH/Dao/Baron/Baron4.png";
-import BaronNFT5 from "../assets/KRONCASH/Dao/Baron/Baron5.png";
-import BaronNFT6 from "../assets/KRONCASH/Dao/Baron/Baron6.png";
+import BaronNFT1 from "../../assets/KRONCASH/Dao/Baron/Baron1.png";
+import BaronNFT2 from "../../assets/KRONCASH/Dao/Baron/Baron2.png";
+import BaronNFT3 from "../../assets/KRONCASH/Dao/Baron/Baron3.png";
+import BaronNFT4 from "../../assets/KRONCASH/Dao/Baron/Baron4.png";
+import BaronNFT5 from "../../assets/KRONCASH/Dao/Baron/Baron5.png";
+import BaronNFT6 from "../../assets/KRONCASH/Dao/Baron/Baron6.png";
 
 // Viscount Assets
-import Viscount1 from "../assets/KRONCASH/Dao/Viscount/Viscount1.png";
-import Viscount2 from "../assets/KRONCASH/Dao/Viscount/Viscount2.png";
-import Viscount3 from "../assets/KRONCASH/Dao/Viscount/Viscount3.png";
+import Viscount1 from "../../assets/KRONCASH/Dao/Viscount/Viscount1.png";
+import Viscount2 from "../../assets/KRONCASH/Dao/Viscount/Viscount2.png";
+import Viscount3 from "../../assets/KRONCASH/Dao/Viscount/Viscount3.png";
 
 // Marquess Assets
-import Marquess1 from "../assets/KRONCASH/Dao/Marquee/Marquee1.png";
-import Marquess2 from "../assets/KRONCASH/Dao/Marquee/Marquee2.png";
-import Marquess3 from "../assets/KRONCASH/Dao/Marquee/Marquee3.png";
+import Marquess1 from "../../assets/KRONCASH/Dao/Marquee/Marquee1.png";
+import Marquess2 from "../../assets/KRONCASH/Dao/Marquee/Marquee2.png";
+import Marquess3 from "../../assets/KRONCASH/Dao/Marquee/Marquee3.png";
 
 // Duke Assets
-import Duke1 from "../assets/KRONCASH/Dao/Duke/Duke1.png";
-import Duke2 from "../assets/KRONCASH/Dao/Duke/Duke2.png";
-import Duke3 from "../assets/KRONCASH/Dao/Duke/Duke3.png";
+import Duke1 from "../../assets/KRONCASH/Dao/Duke/Duke1.png";
+import Duke2 from "../../assets/KRONCASH/Dao/Duke/Duke2.png";
+import Duke3 from "../../assets/KRONCASH/Dao/Duke/Duke3.png";
 
 const Dao = () => {
 
@@ -54,6 +56,8 @@ const Dao = () => {
 
   const [title, setTitle] = useState("");
   const [story, setStory] = useState("");
+
+  const [account, setAccounts] = useState("");
 
   const OpenModal = (nft_title, nft_story) => {
     setTitle(nft_title);
@@ -67,8 +71,42 @@ const Dao = () => {
     onCloseModal();
   };
 
+  const HandleVote = () => {
+    toast.warn('Connect Wallet!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  }
+
+  useEffect(() => {
+    // wallet connection part
+    if (window.ethereum) {
+      window.ethereum
+        .request({
+          method: "eth_requestAccounts",
+        })
+        .then((accounts) => {
+          setAccounts(accounts[0]);
+        })
+        .catch((error) => {
+          alert(`Something went wrong: ${error}`);
+          window.location.href = "/";
+        });
+    } else {
+      alert("Please install Metamask wallet!");
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <div className="main-background">
+      <ToastContainer />
       <div className="dao_title">Governance Protocol 2.0 Kroncash-France DAO Titles</div>
       <div className="NFT_group">
         <div className="NFT_Container">
@@ -231,7 +269,7 @@ const Dao = () => {
             </div>
           )}
           <div className="Vote_story">{story}</div>
-          <button className="NFT_rent_btn">Vote Now</button>
+          <button onClick={() => HandleVote()} className="NFT_rent_btn">Vote Now</button>
         </div>
       </Modal>
     </div>

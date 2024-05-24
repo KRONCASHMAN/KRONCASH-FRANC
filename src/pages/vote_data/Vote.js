@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import table_icon_kroncash from "../assets/KRONCASH/KCF.png";
-import table_icon_kronlet from "../assets/image/name-logo.png";
-import table_icon_ETH from "../assets/image/eth.png";
-import table_icon_rocket from "../assets/image/blockchain/16.svg";
-import main_img_1 from "../assets/KRONCASH/22.png";
-import main_img_2 from "../assets/KRONCASH/23.png";
-import main_img_3 from "../assets/KRONCASH/Bitmap.png";
-import main_img_4 from "../assets/KRONCASH/BonusCharactor.png";
-import baron_img from "../assets/KRONCASH/BaronPro.png";
-import viscount_img from "../assets/KRONCASH/ViscountPro.png";
-import marques_img from "../assets/KRONCASH/MarquessPro.png";
-import duke_img from "../assets/KRONCASH/DukePro.png";
-import Princess_img from "../assets/KRONCASH/PrincessPro.png";
-import VoteCard from "./home_data/Votepage_card";
+import table_icon_kroncash from "../../assets/KRONCASH/KCF.png";
+import table_icon_kronlet from "../../assets/image/name-logo.png";
+import table_icon_ETH from "../../assets/image/eth.png";
+import table_icon_rocket from "../../assets/image/blockchain/16.svg";
+import main_img_1 from "../../assets/KRONCASH/22.png";
+import main_img_2 from "../../assets/KRONCASH/23.png";
+import main_img_3 from "../../assets/KRONCASH/Bitmap.png";
+import main_img_4 from "../../assets/KRONCASH/BonusCharactor.png";
+import baron_img from "../../assets/KRONCASH/BaronPro.png";
+import viscount_img from "../../assets/KRONCASH/ViscountPro.png";
+import marques_img from "../../assets/KRONCASH/MarquessPro.png";
+import duke_img from "../../assets/KRONCASH/DukePro.png";
+import Princess_img from "../../assets/KRONCASH/PrincessPro.png";
+import VoteCard from "../home_data/Votepage_card";
 import "./Vote.scss";
 
 const Vote = () => {

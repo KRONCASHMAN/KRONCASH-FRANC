@@ -6,8 +6,9 @@ import Header from "./pages/Header";
 import LoadingPage from "./pages/LoadingPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Dao from "./pages/Dao";
-import Vote from "./pages/Vote";
+import Dao from "./pages/dao_data/Dao";
+import Presale from "./pages/presale_data/Presale";
+import Vote from "./pages/vote_data/Vote";
 import Contact from "./pages/Contact";
 
 // load css
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/vote" element={<Vote />} />
           <Route path="/dao" element={<Dao />} />
+          <Route path="/presale" element={<Presale />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />

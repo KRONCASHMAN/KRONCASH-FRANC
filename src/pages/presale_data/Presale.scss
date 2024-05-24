@@ -1,0 +1,468 @@
+.main-background {
+  width: 100%;
+}
+
+.KronLetIndexContainer {
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  flex-direction: row;
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  align-items: start;
+  padding: 48px 0px 42px 0px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+.ClientsPart {
+  margin-top: 100px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0px 42px 0px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+.LeftPart {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}
+.SummaryImg_avatar {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.CenterPart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+.CenterImgChart {
+  width: 90%;
+  margin: 0 auto;
+}
+.CenterImg {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.RightPart {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0 auto;
+}
+
+.StyledGlobalImage {
+  position: absolute;
+  opacity: .2;
+  left: 35%;
+  width: 30%;
+  z-index: 0;
+}
+
+.SummaryPart {
+  width: 554px;
+  font-family: Azeret Mono;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 29px;
+  color: black;
+
+  @media (max-width: 1100px) {
+    width: 300px;
+  }
+  @media (max-width: 1200px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.StyledButtonsPart {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.CardColor {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  justify-content: space-between;
+}
+.CardGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: ABeeZee;
+  line-height: 40px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.BuyKronLetButton {
+  border-width: 0px;
+  border-radius: 0px;
+  font-style: italic;
+  color: black;
+}
+
+.ReadWhitePaperButton {
+  border: solid 1px black;
+  border-radius: 0px;
+  background-color: gray;
+}
+
+.CoinGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Container_sell {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.StyledDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.StyledHeader {
+  font-size: 37.9px;
+  line-height: 42.64px;
+  font-weight: 800;
+  font-family: System-ui;
+  color: var(--title-color);
+}
+
+.StyledDescription {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+
+.MainTips {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.StyledButton {
+  border-radius: 0px;
+  font-size: 16px;
+  border: solid 1px gray;
+  padding: 10px 20px;
+  background: yellow;
+  font-family: ABeezee;
+  color: gray;
+  font-size: 20px;
+}
+
+.Container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.StyledDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.DescriptionDiv {
+  display: flex;
+  flex-direction: row;
+  width: 546px;
+  @media (max-width: 800px) {
+    font-size: 20px;
+    width: 290px;
+  }
+}
+
+.Title {
+  font-size: 38px;
+  line-height: 43px;
+  font-family: ABeeZee;
+  color: red;
+}
+
+.Description {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: ABeeZee;
+  color: red;
+  text-align: center;
+}
+
+.FaqsPart {
+  margin-top: 50px;
+  border-bottom: solid 2px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 856px;
+  @media (max-width: 800px) {
+    font-size: 20px;
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    width: 290px;
+  }
+}
+
+.StyledShowMoreButton {
+  color: red;
+  font-family: ABeeZee;
+  font-size: 16px;
+  line-height: 24px;
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+
+.PresaleSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 70px;
+  font-family: ABeeZee;
+  font-weight: 400;
+  @media (max-width: 800px) {
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.RoundRightTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 37.9px;
+  color: white;
+  @media (max-width: 800px) {
+    font-size: 23px;
+  }
+}
+.RoundRightSmTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 21.33px;
+  color: #b3b3b3;
+  padding: 5px 0px;
+  @media (max-width: 800px) {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.ErrorMessage {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  color: #ff0000;
+  padding: 5px 0px;
+  @media (max-width: 800px) {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.RoundRightSmcolTitle {
+  color: #f3f3f3;
+}
+
+.ErrorMessageTitle {
+  color: #ff0000 !important;
+}
+
+.CountNumberBox {
+  display: flex;
+  color: #cbfb45;
+  @media (max-width: 800px) {
+    margin: 0 auto;
+    text-align: center;
+    width: 170px;
+  }
+}
+.RoundButtonGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 800px) {
+    font-size: 20px;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.Countnumber {
+  background-color: white;
+  font-size: 20px;
+  border: none;
+  color: red;
+  text-align: center;
+  width: 100px;
+  padding: 10px 15px;
+  @media (max-width: 800px) {
+    font-size: 17px;
+  }
+}
+.Countnumberminus {
+  background-color: blue;
+  color: white !important;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 800px) {
+    font-size: 17px;
+  }
+}
+.Countnumberplus {
+  background-color: red;
+  color: white !important;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 800px) {
+    font-size: 17px;
+  }
+}
+.RoundButton {
+  background-color: #cbfb45;
+  font-size: 20px;
+  margin-left: 40px;
+  padding: 10px 15px;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+}
+.PresaleMainCard {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 800px) {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.TokenDataCard {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 800px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.Bigcounttitle {
+  font-size: 24px;
+  font-family: ABeeZee;
+  font-weight: bold;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  line-height: 34px;
+  @media (max-width: 800px) {
+    font-size: 17px;
+  }
+}
+.Count {
+  color: #f6f6fa;
+  font-weight: 400;
+  font-family: ABeeZee;
+}
+.CardColor {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  justify-content: space-between;
+}
+.CardGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: ABeeZee;
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-left: 35px;
+
+  @media (max-width: 800px) {
+    font-size: 15px;
+  }
+}
+
+.SummaryImg {
+  width: 50px;
+}
+
+.CoinGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0px;
+}

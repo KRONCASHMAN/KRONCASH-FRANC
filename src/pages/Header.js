@@ -33,6 +33,12 @@ const RouteList = [
   },
   {
     id: 5,
+    name: "PreSale",
+    key: "presale",
+    img: voting,
+  },
+  {
+    id: 6,
     name: "Contact Us",
     key: "contact",
   },
@@ -118,9 +124,9 @@ const Header = () => {
               </div>
             );
           })}
-          <div className="list-item">
+          {/* <div className="list-item">
             <a target="_blank" href="https://presale-dun.vercel.app/">Launch Presale</a>
-          </div>
+          </div> */}
         </div>
 
         {menuFlag && (
@@ -132,9 +138,9 @@ const Header = () => {
                 </div>
               );
             })}
-            <div className="list-item">
+            {/* <div className="list-item">
               <a target="_blank" href="https://presale-dun.vercel.app/">Launch Presale</a>
-            </div>
+            </div> */}
 
             <div className="button-section">
               <a
