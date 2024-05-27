@@ -10,7 +10,7 @@ import ViscountNFT from "../../assets/KRONCASH/ViscountPro.png";
 import MarqueeNFT from "../../assets/KRONCASH/MarquessPro.png";
 import DukeNFT from "../../assets/KRONCASH/DukePro.png";
 import VivienneNFT from "../../assets/KRONCASH/Dao/Vivienne/vivienne1.png"
-import MargottNFT from "../../assets/KRONCASH/Dao/Margott/Margott1.png";
+import MichelineNFT from "../../assets/KRONCASH/Dao/Margott/Margott1.png";
 import MediciNFT from "../../assets/KRONCASH/Dao/Medici/Medici1.png";
 import IsoldeNFT from "../../assets/KRONCASH/Dao/Isolde/Isolde.png";
 
@@ -112,7 +112,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={BaronNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Baron NFT</div>
+            <div className="NFT_title">Baron</div>
             <div className="NFT_price">Price: 500 USDT</div>
           </div>
           <div className="NFT_detail">
@@ -123,7 +123,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={ViscountNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Viscount NFT</div>
+            <div className="NFT_title">Viscount</div>
             <div className="NFT_price">Price: 1000 USDT</div>
           </div>
           <div className="NFT_detail">
@@ -134,7 +134,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={MarqueeNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Marquee NFT</div>
+            <div className="NFT_title">Marquee</div>
             <div className="NFT_price">Price: 2500 USDT</div>
           </div>
           <div className="NFT_detail">
@@ -145,7 +145,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={DukeNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Duke NFT</div>
+            <div className="NFT_title">Duke</div>
             <div className="NFT_price">Price: 5000 USDT</div>
           </div>
           <div className="NFT_detail">
@@ -158,7 +158,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={VivienneNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Vivienne NFT</div>
+            <div className="NFT_title">Princess Vivienne</div>
             <div className="NFT_price">Price: 0.5 ETH</div>
           </div>
           <div className="NFT_detail">
@@ -169,22 +169,22 @@ const Dao = () => {
           <button onClick={() => OpenModal("Princess Vivienne of Bordeaux:", "Princess Vivienne of Bordeaux, the enchanting guardian of the region's lush vineyards and historic chateaux, longed for a noble suitor to share her life and reign. With a kingdom alliance at the incredible deal 0.5 ETH, she awaits the arrival of a courageous and honorable Noble to fulfill her dreams of love and companionship.")} className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
-          <img className="summary_img" src={MargottNFT} alt="Baron" />
+          <img className="summary_img" src={MichelineNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Margott NFT</div>
+            <div className="NFT_title">Princess Micheline</div>
             <div className="NFT_price">Price: 0.6 ETH</div>
           </div>
           <div className="NFT_detail">
             Here is amazing story!
             <br />
-            If you want to read more about Princess Margott, please click the View More & Vote Now button.
+            If you want to read more about Princess Micheline, please click the View More & Vote Now button.
           </div>
-          <button onClick={() => OpenModal("Princess Margott of Normandy: The Soldier's Muse 0.6 ETH", "Princess Margott de Normandy, a fierce and noble guardian of the region's historic battlefields and coastal cliffs, held a deep admiration for the bravery of soldiers. Known for her unwavering support and affection for those who served, she cherished the tales of valor and courage, always ready to welcome a hero into her heart.")} className="NFT_rent_btn">View More & Vote Now</button>
+          <button onClick={() => OpenModal("Princess Micheline of Normandy: The Soldier's Muse 0.6 ETH", "Princess Micheline de Normandy, a fierce and noble guardian of the region's historic battlefields and coastal cliffs, held a deep admiration for the bravery of soldiers. Known for her unwavering support and affection for those who served, she cherished the tales of valor and courage, always ready to welcome a hero into her heart.")} className="NFT_rent_btn">View More & Vote Now</button>
         </div>
         <div className="NFT_Container">
           <img className="summary_img" src={MediciNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Medici NFT</div>
+            <div className="NFT_title">Princess Medici</div>
             <div className="NFT_price">Price: 0.3 ETH</div>
           </div>
           <div className="NFT_detail">
@@ -197,7 +197,7 @@ const Dao = () => {
         <div className="NFT_Container">
           <img className="summary_img" src={IsoldeNFT} alt="Baron" />
           <div className="NFT_Price_detail">
-            <div className="NFT_title">Isolde NFT</div>
+            <div className="NFT_title">Princess Isolde</div>
             <div className="NFT_price">Price: 0.1 ETH</div>
           </div>
           <div className="NFT_detail">
@@ -251,9 +251,9 @@ const Dao = () => {
               <img className="Vote_picture" src={VivienneNFT4} alt="" />
             </div>
           )}
-          {title == "Princess Margott of Normandy: The Soldier's Muse 0.6 ETH" && (
+          {title == "Princess Micheline of Normandy: The Soldier's Muse 0.6 ETH" && (
             <div className="Vote_nft_picture_group">
-              <img className="Vote_picture" src={MargottNFT} alt="" />
+              <img className="Vote_picture" src={MichelineNFT} alt="" />
             </div>
           )}
           {title == "Princess Catherine Medici of Burgundy: The Renaissance Jewel" && (
